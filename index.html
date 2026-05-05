@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DARP3D — Print joy.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="DARP3D — bouncy, candy-colored 3D-printed objects on demand.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #F5F5F0; }
+  body { font-family: "DM Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  @keyframes darpSpin { 0% { transform: rotateY(0) rotateX(-12deg); } 100% { transform: rotateY(360deg) rotateX(-12deg); } }
+  @keyframes darpRotateRing { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+  @keyframes darpFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  @keyframes darpMarquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  @keyframes darpPop { 0% { transform: scale(0.85); opacity: 0; } 60% { transform: scale(1.04); opacity: 1; } 100% { transform: scale(1); } }
+  /* Responsive: hide desktop on small screens, show only mobile */
+  .darp-desktop-wrap { display: block; }
+  .darp-mobile-wrap { display: none; }
+  @media (max-width: 900px) {
+    .darp-desktop-wrap { display: none; }
+    .darp-mobile-wrap { display: block; }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="darp3d-shared.jsx"></script>
+<script type="text/babel" src="darp3d-cart.jsx"></script>
+<script type="text/babel" src="darp3d-desktop.jsx"></script>
+<script type="text/babel" src="darp3d-mobile.jsx"></script>
+<script type="text/babel">
+function ProdApp() {
+  const t = {
+    bgColor: '#F5F5F0',
+    accentA: '#3A86FF',
+    accentB: '#FB5607',
+    accentC: '#F15BB5',
+    accentD: '#FFBE0B',
+    spinSpeed: 18,
+  };
+  const [cart, setCart] = React.useState([]);
+  const [cartOpen, setCartOpen] = React.useState(false);
+  const addToCart = React.useCallback((item) => {
+    setCart(prev => {
+      const found = prev.find(i => i.id === item.id && i.color === item.color);
+      if (found) return prev.map(i => i === found ? { ...i, qty: i.qty + 1 } : i);
+      return [...prev, { ...item, qty: 1 }];
+    });
+  }, []);
+  return (
+    <>
+      <div className="darp-desktop-wrap">
+        <DARPDesktop tweaks={t} cart={cart} addToCart={addToCart} openCart={() => setCartOpen(true)} />
+        <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} cart={cart} setCart={setCart} t={t} />
+      </div>
+      <div className="darp-mobile-wrap">
+        <DARPMobile tweaks={t} cart={cart} addToCart={addToCart} openCart={() => setCartOpen(true)} />
+      </div>
+    </>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<ProdApp />);
+</script>
+</body>
+</html>
