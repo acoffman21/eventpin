@@ -958,5 +958,965 @@
     "difficulty": "medium",
     "era": "modern",
     "region": "Africa"
+  },
+  {
+    "id": 61,
+    "title": "Battle of the Somme",
+    "year": 1916,
+    "clue": "One of the bloodiest battles of World War I, fought along a river in northern France over five months.",
+    "lat": 49.9978,
+    "lng": 2.6986,
+    "description": "The Battle of the Somme (July–November 1916) was one of the largest battles of WWI. On the first day alone, the British suffered 57,470 casualties.",
+    "facts": [
+      "Tanks were used in combat for the first time during this battle.",
+      "Over 1 million men were killed or wounded on all sides."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 62,
+    "title": "Battle of Stalingrad",
+    "year": 1942,
+    "clue": "A brutal urban siege on the banks of the Volga became the turning point of World War II's Eastern Front.",
+    "lat": 48.708,
+    "lng": 44.5133,
+    "description": "The Battle of Stalingrad (August 1942–February 1943) was one of the deadliest battles in history. The Soviet victory marked the turning point of WWII in Europe.",
+    "facts": [
+      "An estimated 2 million people were killed, wounded, or captured.",
+      "The city is now called Volgograd."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 63,
+    "title": "Battle of Midway",
+    "year": 1942,
+    "clue": "A decisive naval battle near a Pacific atoll turned the tide of war in the Pacific Theater.",
+    "lat": 28.2072,
+    "lng": -177.3735,
+    "description": "The Battle of Midway (June 1942) was a decisive American naval victory that destroyed four Japanese aircraft carriers and shifted the balance of power in the Pacific.",
+    "facts": [
+      "American codebreakers had deciphered Japanese plans before the battle.",
+      "Japan lost four fleet carriers — Akagi, Kaga, Soryu, and Hiryu."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Oceania"
+  },
+  {
+    "id": 64,
+    "title": "Battle of Britain",
+    "year": 1940,
+    "clue": "Fighter pilots defended their island nation from sustained aerial bombardment during World War II.",
+    "lat": 51.1537,
+    "lng": 1.3462,
+    "description": "The Battle of Britain (July–October 1940) was the first major military campaign fought entirely by air forces. The RAF's defense prevented a German invasion of Britain.",
+    "facts": [
+      "Churchill said, 'Never in the field of human conflict was so much owed by so many to so few.'",
+      "Radar technology gave Britain a crucial advantage."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 65,
+    "title": "Dunkirk Evacuation",
+    "year": 1940,
+    "clue": "Hundreds of thousands of trapped Allied soldiers were rescued from beaches across the English Channel by a fleet of civilian boats.",
+    "lat": 51.0381,
+    "lng": 2.3773,
+    "description": "The Dunkirk evacuation (May–June 1940) rescued over 338,000 Allied soldiers from the beaches of Dunkirk, France, using military and civilian vessels.",
+    "facts": [
+      "Over 800 civilian 'little ships' participated in the rescue.",
+      "Churchill called it a 'miracle of deliverance' but warned 'wars are not won by evacuations.'"
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 66,
+    "title": "Nuremberg Trials",
+    "year": 1945,
+    "clue": "Major war criminals faced justice in a German city's courtroom after World War II.",
+    "lat": 49.4521,
+    "lng": 11.0767,
+    "description": "The Nuremberg Trials (1945–1946) prosecuted prominent leaders of Nazi Germany for war crimes, crimes against humanity, and genocide, establishing precedents for international law.",
+    "facts": [
+      "Twelve defendants were sentenced to death by hanging.",
+      "Hermann Göring committed suicide the night before his scheduled execution."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 67,
+    "title": "Bombing of Nagasaki",
+    "year": 1945,
+    "clue": "The second atomic bomb was dropped on this Japanese city, three days after the first.",
+    "lat": 32.7734,
+    "lng": 129.8625,
+    "description": "On August 9, 1945, the United States dropped the 'Fat Man' atomic bomb on Nagasaki, killing approximately 40,000 people instantly. Japan surrendered six days later.",
+    "facts": [
+      "Nagasaki was actually the secondary target — the primary target, Kokura, was obscured by clouds.",
+      "The bomb was a plutonium implosion device, different from the uranium bomb used on Hiroshima."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 68,
+    "title": "V-E Day — German Surrender at Reims",
+    "year": 1945,
+    "clue": "Germany signed its unconditional surrender in a schoolhouse in this French city, ending WWII in Europe.",
+    "lat": 49.2583,
+    "lng": 4.0317,
+    "description": "On May 7, 1945, General Alfred Jodl signed Germany's unconditional surrender at SHAEF headquarters in Reims, France, ending World War II in Europe.",
+    "facts": [
+      "The surrender was signed in a red schoolhouse that served as Eisenhower's headquarters.",
+      "The Soviet Union insisted on a second signing ceremony in Berlin the next day."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 69,
+    "title": "Gallipoli Campaign",
+    "year": 1915,
+    "clue": "Allied forces attempted an amphibious landing on a peninsula to knock an empire out of World War I.",
+    "lat": 40.3347,
+    "lng": 26.2858,
+    "description": "The Gallipoli Campaign (1915–1916) was a failed Allied attempt to control the Dardanelles strait. The defeat shaped the national identities of Australia, New Zealand, and Turkey.",
+    "facts": [
+      "ANZAC Day (April 25) commemorates the landing of Australian and New Zealand forces.",
+      "Mustafa Kemal (later Atatürk) gained fame defending the peninsula."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 70,
+    "title": "Iwo Jima — Raising the Flag",
+    "year": 1945,
+    "clue": "Marines raised a flag atop a volcanic island, creating one of the most iconic photographs of World War II.",
+    "lat": 24.784,
+    "lng": 141.3217,
+    "description": "On February 23, 1945, U.S. Marines raised the American flag on Mount Suribachi during the Battle of Iwo Jima. The photograph became an enduring symbol of WWII.",
+    "facts": [
+      "Three of the six flag raisers in the famous photo were killed in subsequent fighting on the island.",
+      "The battle lasted 36 days and cost nearly 7,000 American lives."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 71,
+    "title": "Napoleon's Exile to Elba",
+    "year": 1814,
+    "clue": "A defeated emperor was exiled to a small Mediterranean island, only to escape and reclaim power briefly.",
+    "lat": 42.7624,
+    "lng": 10.2475,
+    "description": "After his abdication in April 1814, Napoleon was exiled to the island of Elba off the coast of Italy. He escaped in February 1815, returning to power for the Hundred Days.",
+    "facts": [
+      "Napoleon was given sovereignty over Elba and allowed to keep 600 soldiers.",
+      "The famous palindrome 'Able was I ere I saw Elba' was likely invented later."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 72,
+    "title": "Gandhi's Salt March",
+    "year": 1930,
+    "clue": "A leader marched 240 miles to the sea to protest a colonial tax on a common mineral, sparking a movement.",
+    "lat": 20.9217,
+    "lng": 72.2649,
+    "description": "Mahatma Gandhi led the Salt March from his ashram to the coastal town of Dandi in 1930, defying British salt taxes in an act of nonviolent civil disobedience.",
+    "facts": [
+      "The march covered 240 miles over 24 days.",
+      "Over 80,000 Indians were jailed for making or selling salt in defiance of the law."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 73,
+    "title": "Assassination of Abraham Lincoln",
+    "year": 1865,
+    "clue": "A president was shot while watching a play at a theater in the nation's capital.",
+    "lat": 38.8966,
+    "lng": -77.0256,
+    "description": "On April 14, 1865, President Abraham Lincoln was shot by John Wilkes Booth at Ford's Theatre in Washington, D.C. He died the following morning.",
+    "facts": [
+      "Lincoln was watching 'Our American Cousin' when he was shot.",
+      "Booth broke his leg jumping from the presidential box to the stage."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 74,
+    "title": "Assassination of JFK",
+    "year": 1963,
+    "clue": "A president was shot while riding in a motorcade through a Texas city.",
+    "lat": 32.7788,
+    "lng": -96.8083,
+    "description": "President John F. Kennedy was assassinated on November 22, 1963, in Dallas, Texas, while riding in an open motorcade through Dealey Plaza.",
+    "facts": [
+      "Lee Harvey Oswald was arrested for the assassination but was killed two days later by Jack Ruby.",
+      "The Zapruder film captured the assassination on 8mm home movie film."
+    ],
+    "difficulty": "easy",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 75,
+    "title": "Churchill's 'We Shall Fight on the Beaches' Speech",
+    "year": 1940,
+    "clue": "A wartime leader rallied his nation with a famous speech delivered in the houses of parliament.",
+    "lat": 51.4995,
+    "lng": -0.1248,
+    "description": "On June 4, 1940, Winston Churchill delivered his 'We shall fight on the beaches' speech to the House of Commons, rallying British resolve after the Dunkirk evacuation.",
+    "facts": [
+      "Churchill gave three major speeches in June 1940, collectively his most famous oratory.",
+      "The speech was not broadcast live — Churchill re-recorded it for radio years later."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 76,
+    "title": "Alexander the Great at the Battle of Gaugamela",
+    "year": -331,
+    "clue": "A young Macedonian king decisively defeated the Persian Empire on the plains of ancient Mesopotamia.",
+    "lat": 36.4,
+    "lng": 43.45,
+    "description": "In 331 BC, Alexander the Great defeated Darius III at Gaugamela (near modern Mosul, Iraq), effectively ending the Persian Achaemenid Empire.",
+    "facts": [
+      "Alexander was only 25 years old at the time of the battle.",
+      "Despite being heavily outnumbered, Alexander's superior tactics won the day."
+    ],
+    "difficulty": "hard",
+    "era": "ancient",
+    "region": "Asia"
+  },
+  {
+    "id": 77,
+    "title": "Genghis Khan Conquers Beijing",
+    "year": 1215,
+    "clue": "A Mongol conqueror captured the capital of a Chinese dynasty, expanding the largest land empire in history.",
+    "lat": 39.916,
+    "lng": 116.3907,
+    "description": "In 1215, Genghis Khan's Mongol forces captured Zhongdu (modern Beijing), the capital of the Jin dynasty, as part of his campaign that created the vast Mongol Empire.",
+    "facts": [
+      "The Mongol Empire eventually stretched from Korea to Eastern Europe.",
+      "Genghis Khan's actual burial site remains unknown to this day."
+    ],
+    "difficulty": "hard",
+    "era": "medieval",
+    "region": "Asia"
+  },
+  {
+    "id": 78,
+    "title": "Cleopatra's Death in Alexandria",
+    "year": -30,
+    "clue": "The last pharaoh of an ancient kingdom died in her palace in a great Mediterranean port city.",
+    "lat": 31.2001,
+    "lng": 29.9187,
+    "description": "Cleopatra VII, the last active ruler of Ptolemaic Egypt, died in Alexandria in 30 BC, allegedly by snakebite, after the defeat of her forces by Octavian (Augustus).",
+    "facts": [
+      "Cleopatra spoke nine languages and was the first Ptolemaic ruler to learn Egyptian.",
+      "Her death marked the end of the Ptolemaic Kingdom and Egypt's annexation by Rome."
+    ],
+    "difficulty": "medium",
+    "era": "ancient",
+    "region": "Africa"
+  },
+  {
+    "id": 79,
+    "title": "Columbus Lands in the Americas",
+    "year": 1492,
+    "clue": "An Italian explorer sailing for Spain made landfall on a Caribbean island, believing he had reached Asia.",
+    "lat": 24.0456,
+    "lng": -74.5318,
+    "description": "On October 12, 1492, Christopher Columbus landed on San Salvador in the Bahamas, marking the beginning of sustained European contact with the Americas.",
+    "facts": [
+      "Columbus made four voyages to the Americas but never realized he hadn't reached Asia.",
+      "He initially called the indigenous people 'Indians' because he thought he was in the Indies."
+    ],
+    "difficulty": "medium",
+    "era": "medieval",
+    "region": "North America"
+  },
+  {
+    "id": 80,
+    "title": "Vasco da Gama Reaches India",
+    "year": 1498,
+    "clue": "A Portuguese explorer arrived at this Indian port city, completing the first sea route from Europe to Asia.",
+    "lat": 11.2588,
+    "lng": 75.7804,
+    "description": "Vasco da Gama reached Calicut (Kozhikode), India, on May 20, 1498, establishing the first direct sea route from Europe to Asia around the Cape of Good Hope.",
+    "facts": [
+      "The voyage took about 10 months from Lisbon.",
+      "The sea route broke the monopoly of Arab and Venetian traders on the spice trade."
+    ],
+    "difficulty": "hard",
+    "era": "medieval",
+    "region": "Asia"
+  },
+  {
+    "id": 81,
+    "title": "Darwin's Arrival at the Galápagos Islands",
+    "year": 1835,
+    "clue": "A naturalist arrived at volcanic islands in the Pacific, where unique wildlife would inspire a revolutionary theory.",
+    "lat": -0.9538,
+    "lng": -90.9656,
+    "description": "Charles Darwin visited the Galápagos Islands in 1835 aboard HMS Beagle. His observations of finches and tortoises contributed to his theory of evolution by natural selection.",
+    "facts": [
+      "Darwin spent only five weeks in the Galápagos.",
+      "He didn't fully develop his theory of natural selection until years after the voyage."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "South America"
+  },
+  {
+    "id": 82,
+    "title": "Discovery of Penicillin",
+    "year": 1928,
+    "clue": "A scientist accidentally discovered the world's first antibiotic in his London laboratory.",
+    "lat": 51.5176,
+    "lng": -0.1715,
+    "description": "In 1928, Alexander Fleming discovered penicillin at St. Mary's Hospital in London when he noticed mold killing bacteria in a petri dish, revolutionizing medicine.",
+    "facts": [
+      "Fleming's discovery was largely accidental — he left a petri dish uncovered before going on vacation.",
+      "Penicillin saved millions of lives during World War II."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 83,
+    "title": "Marie Curie's Radioactivity Research",
+    "year": 1898,
+    "clue": "A scientist discovered two radioactive elements in a laboratory in the French capital.",
+    "lat": 48.8462,
+    "lng": 2.3461,
+    "description": "In 1898, Marie Curie and her husband Pierre discovered polonium and radium at the School of Physics and Chemistry in Paris, pioneering the study of radioactivity.",
+    "facts": [
+      "Curie was the first woman to win a Nobel Prize and the only person to win in two different sciences.",
+      "Her laboratory notebooks are still too radioactive to handle without protection."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 84,
+    "title": "First Successful Heart Transplant",
+    "year": 1967,
+    "clue": "A surgeon performed the world's first human heart transplant at a hospital in a South African city.",
+    "lat": -33.9415,
+    "lng": 18.4629,
+    "description": "On December 3, 1967, Dr. Christiaan Barnard performed the first successful human heart transplant at Groote Schuur Hospital in Cape Town, South Africa.",
+    "facts": [
+      "The patient, Louis Washkansky, survived 18 days before dying of pneumonia.",
+      "Barnard's second transplant patient lived over 19 months."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Africa"
+  },
+  {
+    "id": 85,
+    "title": "Krakatoa Eruption",
+    "year": 1883,
+    "clue": "A volcanic island between two larger islands erupted with one of the loudest sounds in recorded history.",
+    "lat": -6.102,
+    "lng": 105.423,
+    "description": "The 1883 eruption of Krakatoa in Indonesia was one of the most catastrophic volcanic events in history, killing over 36,000 people and triggering massive tsunamis.",
+    "facts": [
+      "The explosion was heard nearly 3,000 miles away in Australia.",
+      "The eruption caused global temperatures to drop by 1.2°C the following year."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 86,
+    "title": "Cortés Arrives in the Aztec Capital",
+    "year": 1519,
+    "clue": "A Spanish conquistador entered a magnificent island city and was received by its emperor.",
+    "lat": 19.435,
+    "lng": -99.1313,
+    "description": "Hernán Cortés arrived in Tenochtitlan on November 8, 1519, and was received by Emperor Montezuma II. Within two years, the Aztec Empire would fall to the Spanish.",
+    "facts": [
+      "The Spanish were astonished by Tenochtitlan, which was larger than any European city at the time.",
+      "Smallpox brought by the Spanish devastated the Aztec population."
+    ],
+    "difficulty": "hard",
+    "era": "medieval",
+    "region": "North America"
+  },
+  {
+    "id": 87,
+    "title": "Korean War — Battle of Inchon",
+    "year": 1950,
+    "clue": "A daring amphibious assault behind enemy lines turned the tide of a war on the Korean Peninsula.",
+    "lat": 37.4563,
+    "lng": 126.7052,
+    "description": "On September 15, 1950, General MacArthur launched a surprise amphibious landing at Inchon, South Korea, cutting off North Korean supply lines and recapturing Seoul.",
+    "facts": [
+      "The landing was considered extremely risky due to extreme tidal variations at Inchon.",
+      "Within two weeks, Seoul was recaptured from North Korean forces."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 88,
+    "title": "Vietnam War — Fall of Saigon",
+    "year": 1975,
+    "clue": "A helicopter evacuation from an embassy rooftop marked the end of a long and divisive war.",
+    "lat": 10.7769,
+    "lng": 106.7009,
+    "description": "On April 30, 1975, Saigon fell to North Vietnamese forces, ending the Vietnam War. The chaotic helicopter evacuation from the U.S. Embassy became an iconic image.",
+    "facts": [
+      "Saigon was renamed Ho Chi Minh City after the fall.",
+      "Over 7,000 people were evacuated by helicopter in the final 24 hours."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 89,
+    "title": "Construction of the Statue of Liberty",
+    "year": 1886,
+    "clue": "A gift from one nation to another, this copper colossus greeted immigrants arriving in a famous harbor.",
+    "lat": 40.6892,
+    "lng": -74.0445,
+    "description": "The Statue of Liberty was dedicated on October 28, 1886, as a gift from France to the United States, becoming a symbol of freedom and immigration.",
+    "facts": [
+      "The statue was designed by Frédéric Auguste Bartholdi, with its iron framework built by Gustave Eiffel.",
+      "The statue's full name is 'Liberty Enlightening the World.'"
+    ],
+    "difficulty": "easy",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 90,
+    "title": "Bastogne — Battle of the Bulge",
+    "year": 1944,
+    "clue": "Surrounded American forces held a critical crossroads town during Germany's last major offensive in WWII.",
+    "lat": 50.0004,
+    "lng": 5.7167,
+    "description": "During the Battle of the Bulge (December 1944), the 101st Airborne Division held Bastogne, Belgium, against a German siege. General McAuliffe famously replied 'Nuts!' to a German surrender demand.",
+    "facts": [
+      "The Battle of the Bulge was the deadliest battle for American forces in WWII.",
+      "Patton's Third Army relieved Bastogne after a remarkable forced march."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 91,
+    "title": "Signing of the Japanese Surrender",
+    "year": 1945,
+    "clue": "Japan formally surrendered aboard a battleship anchored in a bay, ending World War II.",
+    "lat": 35.3756,
+    "lng": 139.6573,
+    "description": "On September 2, 1945, Japan signed the instrument of surrender aboard the USS Missouri in Tokyo Bay, officially ending World War II.",
+    "facts": [
+      "The ceremony lasted about 23 minutes.",
+      "General Douglas MacArthur used six pens during the signing."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 92,
+    "title": "Destruction of the Library of Alexandria",
+    "year": -48,
+    "clue": "The ancient world's greatest repository of knowledge, located in a Mediterranean port city, was gradually destroyed.",
+    "lat": 31.2089,
+    "lng": 29.9092,
+    "description": "The Library of Alexandria, founded around 283 BC, was the largest and most significant library of the ancient world. Its destruction, occurring in stages, resulted in an incalculable loss of knowledge.",
+    "facts": [
+      "The library may have held between 40,000 and 400,000 scrolls.",
+      "Multiple events contributed to its destruction, including fires during Julius Caesar's siege."
+    ],
+    "difficulty": "medium",
+    "era": "ancient",
+    "region": "Africa"
+  },
+  {
+    "id": 93,
+    "title": "Hannibal Crosses the Alps",
+    "year": -218,
+    "clue": "A Carthaginian general led an army with war elephants across a mountain range to invade the Roman Republic.",
+    "lat": 45.0,
+    "lng": 6.75,
+    "description": "In 218 BC, Hannibal Barca crossed the Alps with approximately 30,000 soldiers and 37 war elephants to invade Italy, one of the most audacious military feats in history.",
+    "facts": [
+      "Hannibal lost nearly half his army during the treacherous Alpine crossing.",
+      "He remained in Italy for 15 years, winning major battles but never capturing Rome."
+    ],
+    "difficulty": "hard",
+    "era": "ancient",
+    "region": "Europe"
+  },
+  {
+    "id": 94,
+    "title": "Sinking of the Spanish Armada",
+    "year": 1588,
+    "clue": "A powerful naval fleet was defeated in the English Channel, ending one empire's dominance of the seas.",
+    "lat": 50.7,
+    "lng": -1.0,
+    "description": "In 1588, the Spanish Armada — a fleet of 130 ships — was defeated by the English navy and devastated by storms, marking the decline of Spanish naval supremacy.",
+    "facts": [
+      "The English used fire ships to scatter the Armada at the Battle of Gravelines.",
+      "Only about half of the Spanish ships made it back to Spain."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 95,
+    "title": "Construction of the Eiffel Tower",
+    "year": 1889,
+    "clue": "An iron lattice tower was built for a world's fair and became the most iconic landmark of a European capital.",
+    "lat": 48.8584,
+    "lng": 2.2945,
+    "description": "The Eiffel Tower was built for the 1889 World's Fair in Paris, designed by Gustave Eiffel. Originally criticized by many, it became the world's most visited paid monument.",
+    "facts": [
+      "The tower was originally intended to stand for only 20 years.",
+      "It was the world's tallest structure until the Chrysler Building was completed in 1930."
+    ],
+    "difficulty": "easy",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 96,
+    "title": "Execution of Marie Antoinette",
+    "year": 1793,
+    "clue": "A queen was executed by guillotine in a public square during the Reign of Terror.",
+    "lat": 48.8656,
+    "lng": 2.3211,
+    "description": "Marie Antoinette, Queen of France, was executed by guillotine at the Place de la Révolution (now Place de la Concorde) in Paris on October 16, 1793.",
+    "facts": [
+      "She likely never said 'Let them eat cake' — the phrase predates her.",
+      "Her last words were reportedly an apology to the executioner for stepping on his foot."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 97,
+    "title": "Discovery of Machu Picchu by Hiram Bingham",
+    "year": 1911,
+    "clue": "An American explorer rediscovered a hidden Inca citadel high in the Andes, overgrown by jungle.",
+    "lat": -13.1631,
+    "lng": -72.545,
+    "description": "On July 24, 1911, Hiram Bingham III was guided to Machu Picchu by local farmers. Though known to locals, his expedition brought it to international attention.",
+    "facts": [
+      "Bingham was actually searching for the lost city of Vilcabamba, not Machu Picchu.",
+      "He removed thousands of artifacts, which Peru successfully campaigned to have returned from Yale."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "South America"
+  },
+  {
+    "id": 98,
+    "title": "Construction of the Great Sphinx",
+    "year": -2500,
+    "clue": "A colossal limestone statue with a human head and lion's body guards a pharaoh's pyramid complex.",
+    "lat": 29.9753,
+    "lng": 31.1376,
+    "description": "The Great Sphinx of Giza was carved from a single mass of limestone around 2500 BC, likely during the reign of Pharaoh Khafre. It is the oldest known monumental sculpture.",
+    "facts": [
+      "The Sphinx's nose is missing — it may have been chiseled off in the 14th century.",
+      "The statue was buried up to its shoulders in sand for much of its history."
+    ],
+    "difficulty": "easy",
+    "era": "ancient",
+    "region": "Africa"
+  },
+  {
+    "id": 99,
+    "title": "Fall of Constantinople",
+    "year": 1453,
+    "clue": "Ottoman forces breached the legendary walls of a great city, ending over a thousand years of a Christian empire.",
+    "lat": 41.0054,
+    "lng": 28.9769,
+    "description": "On May 29, 1453, Sultan Mehmed II conquered Constantinople, ending the Byzantine Empire after 1,123 years and establishing the Ottoman Empire's capital.",
+    "facts": [
+      "The Ottomans dragged ships overland to bypass the chain blocking the Golden Horn harbor.",
+      "The fall is often cited as the end of the Middle Ages."
+    ],
+    "difficulty": "hard",
+    "era": "medieval",
+    "region": "Europe"
+  },
+  {
+    "id": 100,
+    "title": "Bolívar Liberates Bogotá",
+    "year": 1819,
+    "clue": "A revolutionary leader crossed the Andes and liberated a colonial capital, earning the title 'The Liberator.'",
+    "lat": 4.711,
+    "lng": -74.0721,
+    "description": "Simón Bolívar led his army across the Andes and defeated the Spanish at the Battle of Boyacá on August 7, 1819, liberating Bogotá and establishing Gran Colombia.",
+    "facts": [
+      "Bolívar's crossing of the Andes is compared to Hannibal's crossing of the Alps.",
+      "He liberated six nations: Venezuela, Colombia, Ecuador, Peru, Panama, and Bolivia."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "South America"
+  },
+  {
+    "id": 101,
+    "title": "Meiji Restoration",
+    "year": 1868,
+    "clue": "An emperor reclaimed power from a feudal military government, rapidly modernizing an island nation.",
+    "lat": 34.6851,
+    "lng": 135.8048,
+    "description": "The Meiji Restoration of 1868 ended the Tokugawa shogunate and restored imperial rule under Emperor Meiji, transforming Japan from a feudal society into a modern industrial state.",
+    "facts": [
+      "Japan went from a feudal society to a major world power in just 50 years.",
+      "The capital was moved from Kyoto to Edo, renamed Tokyo."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 102,
+    "title": "Signing of the Camp David Accords",
+    "year": 1978,
+    "clue": "Leaders of two Middle Eastern nations signed a historic peace agreement at a presidential retreat in the mountains.",
+    "lat": 39.6483,
+    "lng": -77.465,
+    "description": "In September 1978, Egyptian President Sadat and Israeli Prime Minister Begin signed the Camp David Accords, brokered by President Carter, leading to the first Arab-Israeli peace treaty.",
+    "facts": [
+      "Sadat and Begin shared the 1978 Nobel Peace Prize.",
+      "Sadat was assassinated in 1981, partly because of the peace deal with Israel."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 103,
+    "title": "Construction of the Forbidden City",
+    "year": 1420,
+    "clue": "An emperor built a vast palace complex of nearly a thousand buildings in the heart of his capital.",
+    "lat": 39.9163,
+    "lng": 116.3972,
+    "description": "The Forbidden City in Beijing was completed in 1420 under the Yongle Emperor of the Ming dynasty. It served as the imperial palace for 500 years and contains 980 buildings.",
+    "facts": [
+      "It is the largest ancient palatial structure in the world, covering 180 acres.",
+      "Commoners were forbidden from entering, hence its name."
+    ],
+    "difficulty": "medium",
+    "era": "medieval",
+    "region": "Asia"
+  },
+  {
+    "id": 104,
+    "title": "Tesla and Westinghouse Power Niagara Falls",
+    "year": 1896,
+    "clue": "The first large-scale alternating current power plant harnessed the energy of a massive waterfall.",
+    "lat": 43.0799,
+    "lng": -79.0747,
+    "description": "In 1896, the Niagara Falls Power Company began transmitting electricity to Buffalo, NY, using Nikola Tesla's AC system, proving alternating current's superiority for power distribution.",
+    "facts": [
+      "The project settled the 'War of Currents' between Tesla's AC and Edison's DC system.",
+      "Power was transmitted 26 miles to Buffalo — a remarkable distance at the time."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 105,
+    "title": "Fidel Castro's Cuban Revolution",
+    "year": 1959,
+    "clue": "Guerrilla fighters marched into a Caribbean capital after overthrowing a dictator, establishing a communist state.",
+    "lat": 23.1136,
+    "lng": -82.3666,
+    "description": "On January 1, 1959, Fidel Castro's revolutionary forces took control of Havana after Fulgencio Batista fled Cuba, establishing a communist government 90 miles from the United States.",
+    "facts": [
+      "Castro initially denied being a communist, only declaring Cuba socialist in 1961.",
+      "He remained in power for 49 years, making him one of the longest-serving heads of state."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 106,
+    "title": "9/11 — Attack on the World Trade Center",
+    "year": 2001,
+    "clue": "Terrorist attacks destroyed twin skyscrapers in a major American city, reshaping global politics.",
+    "lat": 40.7115,
+    "lng": -74.0134,
+    "description": "On September 11, 2001, terrorists hijacked commercial airliners and crashed them into the World Trade Center in New York City, killing 2,977 people in the deadliest attack on U.S. soil.",
+    "facts": [
+      "The Twin Towers collapsed within 102 minutes of being struck.",
+      "The 9/11 Memorial features the largest man-made waterfalls in North America."
+    ],
+    "difficulty": "easy",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 107,
+    "title": "Nelson's Victory at the Battle of Trafalgar",
+    "year": 1805,
+    "clue": "A British admiral won a decisive naval battle off the coast of Spain but was killed during the fighting.",
+    "lat": 36.1833,
+    "lng": -6.1333,
+    "description": "On October 21, 1805, Admiral Horatio Nelson defeated the combined French and Spanish fleets at the Battle of Trafalgar, securing British naval supremacy for a century.",
+    "facts": [
+      "Nelson was killed by a French sniper during the battle.",
+      "His body was preserved in a barrel of brandy for the voyage home."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 108,
+    "title": "Boxer Rebellion — Siege of the Legations",
+    "year": 1900,
+    "clue": "Foreign embassies in an imperial capital were besieged for 55 days by a nationalist uprising.",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "description": "In 1900, the Boxer Rebellion saw Chinese nationalists besiege the foreign legation quarter in Beijing for 55 days before an international relief force arrived.",
+    "facts": [
+      "The Boxers were officially called the 'Society of Righteous and Harmonious Fists.'",
+      "Eight nations sent forces to relieve the siege."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 109,
+    "title": "Hiroshima Peace Memorial Dedication",
+    "year": 1955,
+    "clue": "A memorial museum opened in a city devastated by atomic warfare to promote world peace.",
+    "lat": 34.3915,
+    "lng": 132.4536,
+    "description": "The Hiroshima Peace Memorial Museum opened in 1955, built near the hypocenter of the 1945 atomic bombing, to convey the reality of nuclear weapons and promote peace.",
+    "facts": [
+      "The Genbaku Dome, left standing as a ruin, became a UNESCO World Heritage Site in 1996.",
+      "Over 1.5 million people visit the memorial annually."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 110,
+    "title": "Suez Crisis",
+    "year": 1956,
+    "clue": "A president nationalized a critical waterway, sparking an international crisis involving three invading nations.",
+    "lat": 30.5852,
+    "lng": 32.3152,
+    "description": "In 1956, Egypt's President Nasser nationalized the Suez Canal, prompting a military intervention by Britain, France, and Israel. International pressure forced their withdrawal.",
+    "facts": [
+      "The crisis is considered the end of Britain and France as major global powers.",
+      "The U.S. and Soviet Union both opposed the invasion, a rare Cold War agreement."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Africa"
+  },
+  {
+    "id": 111,
+    "title": "Einstein Publishes Special Relativity in Bern",
+    "year": 1905,
+    "clue": "A patent clerk in a Swiss city published papers that revolutionized physics, including E=mc².",
+    "lat": 46.9481,
+    "lng": 7.4474,
+    "description": "In 1905, while working as a patent clerk in Bern, Switzerland, Albert Einstein published four groundbreaking papers, including his theory of special relativity and the equation E=mc².",
+    "facts": [
+      "1905 is known as Einstein's 'Annus Mirabilis' or 'miracle year.'",
+      "He was only 26 years old and had been rejected for academic positions."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 112,
+    "title": "Magellan's Expedition Reaches the Philippines",
+    "year": 1521,
+    "clue": "A Portuguese explorer leading a Spanish fleet was killed in a battle on a tropical island during the first circumnavigation.",
+    "lat": 10.3157,
+    "lng": 123.8854,
+    "description": "Ferdinand Magellan was killed at the Battle of Mactan in the Philippines on April 27, 1521. His remaining crew completed the first circumnavigation of the Earth.",
+    "facts": [
+      "Only 18 of the original 270 crew members completed the voyage.",
+      "Magellan himself never completed the circumnavigation due to his death."
+    ],
+    "difficulty": "hard",
+    "era": "medieval",
+    "region": "Asia"
+  },
+  {
+    "id": 113,
+    "title": "The Blitz — Bombing of London",
+    "year": 1940,
+    "clue": "Sustained aerial bombing campaigns targeted a European capital for months, but its citizens refused to surrender.",
+    "lat": 51.5074,
+    "lng": -0.1278,
+    "description": "The Blitz (September 1940–May 1941) saw Germany bomb London for 57 consecutive nights, killing over 30,000 civilians. Londoners famously sheltered in Underground stations.",
+    "facts": [
+      "Over a million London houses were destroyed or damaged.",
+      "St. Paul's Cathedral survived largely intact, becoming a symbol of London's resilience."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 114,
+    "title": "Construction of Christ the Redeemer",
+    "year": 1931,
+    "clue": "A massive statue of a religious figure with outstretched arms was completed atop a mountain overlooking a coastal city.",
+    "lat": -22.9519,
+    "lng": -43.2105,
+    "description": "Christ the Redeemer was completed in 1931 atop Corcovado mountain in Rio de Janeiro, Brazil. The 98-foot Art Deco statue became one of the New Seven Wonders of the World.",
+    "facts": [
+      "The statue was built with reinforced concrete and soapstone.",
+      "It is struck by lightning an average of 3-5 times per year."
+    ],
+    "difficulty": "easy",
+    "era": "modern",
+    "region": "South America"
+  },
+  {
+    "id": 115,
+    "title": "Yalta Conference",
+    "year": 1945,
+    "clue": "Three Allied leaders met at a palace on the Black Sea coast to plan the post-war division of Europe.",
+    "lat": 44.4675,
+    "lng": 34.1435,
+    "description": "In February 1945, Roosevelt, Churchill, and Stalin met at Yalta in Crimea to discuss the reorganization of post-war Europe, decisions that shaped the Cold War.",
+    "facts": [
+      "FDR died just two months after the conference.",
+      "The agreements at Yalta effectively divided Europe into Western and Soviet spheres of influence."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 116,
+    "title": "Tokugawa Shogunate Established",
+    "year": 1603,
+    "clue": "A military ruler unified a war-torn island nation, establishing a shogunate that would bring 250 years of peace.",
+    "lat": 34.9756,
+    "lng": 138.3827,
+    "description": "Tokugawa Ieyasu established the Tokugawa Shogunate in 1603 after winning the Battle of Sekigahara, beginning 250 years of peace and isolation known as the Edo period.",
+    "facts": [
+      "Japan's policy of 'sakoku' (closed country) severely restricted foreign trade and travel.",
+      "The Tokugawa period saw the flourishing of kabuki theater, ukiyo-e art, and haiku poetry."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 117,
+    "title": "Attack on Fort Sumter",
+    "year": 1861,
+    "clue": "The first shots of a civil war were fired at a coastal fort in a southern harbor.",
+    "lat": 32.7524,
+    "lng": -79.8747,
+    "description": "On April 12, 1861, Confederate forces fired on Fort Sumter in Charleston Harbor, South Carolina, beginning the American Civil War.",
+    "facts": [
+      "No one was killed during the 34-hour bombardment.",
+      "Major Robert Anderson surrendered the fort on April 14, four years to the day before Lincoln's assassination."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 118,
+    "title": "Printing Press Invented by Gutenberg",
+    "year": 1440,
+    "clue": "A goldsmith in a German city invented a device that revolutionized the spread of knowledge across Europe.",
+    "lat": 49.9929,
+    "lng": 8.2473,
+    "description": "Around 1440, Johannes Gutenberg developed the movable-type printing press in Mainz, Germany, enabling mass production of books and transforming European society.",
+    "facts": [
+      "The Gutenberg Bible was the first major book printed with movable type.",
+      "Only 49 copies of the Gutenberg Bible are known to survive."
+    ],
+    "difficulty": "medium",
+    "era": "medieval",
+    "region": "Europe"
+  },
+  {
+    "id": 119,
+    "title": "Israeli Declaration of Independence",
+    "year": 1948,
+    "clue": "A new nation declared independence in a museum on a boulevard in a Mediterranean coastal city.",
+    "lat": 32.0635,
+    "lng": 34.7738,
+    "description": "On May 14, 1948, David Ben-Gurion proclaimed the State of Israel at the Tel Aviv Museum, establishing the first Jewish state in nearly 2,000 years.",
+    "facts": [
+      "Five Arab nations invaded the new state the very next day.",
+      "The declaration ceremony lasted only 32 minutes."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 120,
+    "title": "Great Fire of London",
+    "year": 1666,
+    "clue": "A fire that started in a bakery destroyed most of a major European city over four days.",
+    "lat": 51.5099,
+    "lng": -0.0831,
+    "description": "The Great Fire of London began on September 2, 1666, in a bakery on Pudding Lane. It destroyed 13,200 houses, 87 churches, and much of the medieval City of London.",
+    "facts": [
+      "Despite the massive destruction, only six verified deaths were recorded.",
+      "Sir Christopher Wren redesigned 51 churches and St. Paul's Cathedral after the fire."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
   }
 ]
