@@ -29,12 +29,13 @@ function generateShareText(totalScore, results, streak, challenges) {
     return '🔴'
   }).join('')
 
-  return `EventPin — ${new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+  const body = `EventPin — ${new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
 
 ${indicators}
 Score: ${totalScore.toLocaleString()} / 5,000
-${streak > 0 ? `${streak} day streak\n` : ''}
-https://eventpin.vercel.app`
+${streak > 0 ? `${streak} day streak\n` : ''}`
+
+  return { body, url: 'https://eventpin.vercel.app' }
 }
 
 export default function SummaryScreen() {
@@ -48,11 +49,12 @@ export default function SummaryScreen() {
   const grade = getOverallGrade(totalScore)
 
   const handleShare = useCallback(async () => {
-    const text = generateShareText(totalScore, challengeResults, streak, challenges)
+    const { body, url } = generateShareText(totalScore, challengeResults, streak, challenges)
+    const fullText = `${body}${url}`
 
     if (navigator.share) {
       try {
-        await navigator.share({ text })
+        await navigator.share({ text: body, url })
         setShared(true)
         return
       } catch (e) {
@@ -61,13 +63,13 @@ export default function SummaryScreen() {
     }
 
     try {
-      await navigator.clipboard.writeText(text)
+      await navigator.clipboard.writeText(fullText)
       setShared(true)
       setTimeout(() => setShared(false), 2000)
     } catch (e) {
       // fallback
       const ta = document.createElement('textarea')
-      ta.value = text
+      ta.value = fullText
       document.body.appendChild(ta)
       ta.select()
       document.execCommand('copy')
