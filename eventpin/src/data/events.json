@@ -1,0 +1,962 @@
+[
+  {
+    "id": 1,
+    "title": "Signing of the Declaration of Independence",
+    "year": 1776,
+    "clue": "Where delegates gathered to sign a document declaring independence from a powerful empire.",
+    "lat": 39.9489,
+    "lng": -75.15,
+    "description": "The Declaration of Independence was signed at Independence Hall in Philadelphia on August 2, 1776, formally announcing the thirteen colonies' separation from Great Britain.",
+    "facts": [
+      "Benjamin Franklin reportedly said, 'We must all hang together, or most assuredly, we shall all hang separately.'",
+      "The document was primarily drafted by Thomas Jefferson in just 17 days."
+    ],
+    "difficulty": "easy",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 2,
+    "title": "Fall of the Berlin Wall",
+    "year": 1989,
+    "clue": "A wall that divided a city for 28 years finally fell, symbolizing the end of the Cold War.",
+    "lat": 52.5163,
+    "lng": 13.3777,
+    "description": "The Berlin Wall fell on November 9, 1989, ending the physical division of East and West Berlin and marking the beginning of German reunification.",
+    "facts": [
+      "The wall stood for 10,316 days.",
+      "Over 5,000 people successfully escaped across the wall during its existence."
+    ],
+    "difficulty": "easy",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 3,
+    "title": "Construction of the Great Pyramid of Giza",
+    "year": -2560,
+    "clue": "The last surviving wonder of the ancient world, built as a tomb for a pharaoh.",
+    "lat": 29.9792,
+    "lng": 31.1342,
+    "description": "The Great Pyramid of Giza was built around 2560 BC as a tomb for Pharaoh Khufu. It remained the tallest man-made structure for over 3,800 years.",
+    "facts": [
+      "It contains approximately 2.3 million stone blocks, each weighing 2.5 tons on average.",
+      "The pyramid was originally covered in white limestone casing stones that would have gleamed in the sunlight."
+    ],
+    "difficulty": "easy",
+    "era": "ancient",
+    "region": "Africa"
+  },
+  {
+    "id": 4,
+    "title": "Battle of Thermopylae",
+    "year": -480,
+    "clue": "A narrow coastal pass where 300 warriors made a legendary last stand against a massive invading army.",
+    "lat": 38.7967,
+    "lng": 22.5367,
+    "description": "In 480 BC, King Leonidas and 300 Spartans (along with several thousand Greek allies) held the narrow pass of Thermopylae against Xerxes' Persian army.",
+    "facts": [
+      "The Greek force was actually around 7,000 soldiers, not just 300.",
+      "The pass was only about 12 meters wide at its narrowest point."
+    ],
+    "difficulty": "medium",
+    "era": "ancient",
+    "region": "Europe"
+  },
+  {
+    "id": 5,
+    "title": "Moon Landing — Apollo 11",
+    "year": 1969,
+    "clue": "The launch site from which humanity first left Earth to walk on another celestial body.",
+    "lat": 28.5721,
+    "lng": -80.648,
+    "description": "Apollo 11 launched from Kennedy Space Center on July 16, 1969. Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon on July 20.",
+    "facts": [
+      "The Saturn V rocket generated 7.6 million pounds of thrust at liftoff.",
+      "Armstrong's first step was watched by an estimated 600 million people worldwide."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 6,
+    "title": "Signing of the Magna Carta",
+    "year": 1215,
+    "clue": "A meadow where a king was forced to seal a charter limiting royal power, shaping democracy forever.",
+    "lat": 51.4447,
+    "lng": -0.5653,
+    "description": "The Magna Carta was sealed by King John at Runnymede in 1215, establishing the principle that everyone, including the king, was subject to the law.",
+    "facts": [
+      "Only 4 of the original 1215 copies survive today.",
+      "The charter was originally written in Latin."
+    ],
+    "difficulty": "hard",
+    "era": "medieval",
+    "region": "Europe"
+  },
+  {
+    "id": 7,
+    "title": "Bombing of Hiroshima",
+    "year": 1945,
+    "clue": "The first city targeted by a nuclear weapon, forever changing the nature of warfare.",
+    "lat": 34.3955,
+    "lng": 132.4534,
+    "description": "On August 6, 1945, the United States dropped the atomic bomb 'Little Boy' on Hiroshima, Japan, killing an estimated 80,000 people instantly.",
+    "facts": [
+      "The Hiroshima Peace Memorial (Genbaku Dome) still stands as a UNESCO World Heritage Site.",
+      "A bank of oleander flowers was the first thing to bloom after the bombing, becoming the city's official flower."
+    ],
+    "difficulty": "easy",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 8,
+    "title": "French Revolution — Storming of the Bastille",
+    "year": 1789,
+    "clue": "Revolutionaries stormed a fortress-prison in a capital city, igniting a revolution that reshaped a nation.",
+    "lat": 48.8531,
+    "lng": 2.3691,
+    "description": "On July 14, 1789, a mob stormed the Bastille prison in Paris, marking the beginning of the French Revolution and the end of absolute monarchy in France.",
+    "facts": [
+      "Only 7 prisoners were found inside the Bastille when it was stormed.",
+      "July 14 is now celebrated as Bastille Day, France's national holiday."
+    ],
+    "difficulty": "easy",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 9,
+    "title": "Construction of the Colosseum",
+    "year": 80,
+    "clue": "The largest amphitheater ever built, where gladiators once fought for the entertainment of an empire.",
+    "lat": 41.8902,
+    "lng": 12.4922,
+    "description": "The Colosseum in Rome was completed in 80 AD under Emperor Titus. It could hold up to 80,000 spectators and hosted gladiatorial contests for over 400 years.",
+    "facts": [
+      "The Colosseum had a retractable canvas roof called the 'velarium' operated by sailors.",
+      "It's estimated that over 400,000 people and 1 million animals died in the arena."
+    ],
+    "difficulty": "easy",
+    "era": "ancient",
+    "region": "Europe"
+  },
+  {
+    "id": 10,
+    "title": "D-Day — Normandy Landings",
+    "year": 1944,
+    "clue": "Allied forces launched the largest seaborne invasion in history on these beaches to liberate a continent.",
+    "lat": 49.3694,
+    "lng": -0.8731,
+    "description": "On June 6, 1944, over 156,000 Allied troops landed on five beaches along the coast of Normandy, France, beginning the liberation of Western Europe from Nazi control.",
+    "facts": [
+      "The operation involved over 5,000 ships and 13,000 aircraft.",
+      "The five beaches were codenamed Utah, Omaha, Gold, Juno, and Sword."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 11,
+    "title": "Machu Picchu Construction",
+    "year": 1450,
+    "clue": "A hidden citadel built high in the mountains by an empire, abandoned before conquistadors arrived.",
+    "lat": -13.1631,
+    "lng": -72.545,
+    "description": "Machu Picchu was built around 1450 AD as an estate for Inca emperor Pachacuti. It was abandoned during the Spanish Conquest and remained unknown to the outside world until 1911.",
+    "facts": [
+      "The site sits at 2,430 meters above sea level.",
+      "No wheels, iron tools, or draft animals were used in its construction."
+    ],
+    "difficulty": "easy",
+    "era": "medieval",
+    "region": "South America"
+  },
+  {
+    "id": 12,
+    "title": "Assassination of Archduke Franz Ferdinand",
+    "year": 1914,
+    "clue": "An assassination on a city street that triggered a chain of events leading to a world war.",
+    "lat": 43.8586,
+    "lng": 18.431,
+    "description": "Archduke Franz Ferdinand of Austria-Hungary was assassinated in Sarajevo on June 28, 1914, by Gavrilo Princip, directly triggering World War I.",
+    "facts": [
+      "The assassin, Gavrilo Princip, was only 19 years old.",
+      "The Archduke's car had taken a wrong turn, placing it directly in front of Princip by chance."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 13,
+    "title": "Great Wall of China — Major Construction",
+    "year": -221,
+    "clue": "A massive defensive fortification stretching thousands of miles, begun by the first emperor to unify a nation.",
+    "lat": 40.4319,
+    "lng": 116.5704,
+    "description": "Major construction of the Great Wall began under Emperor Qin Shi Huang around 221 BC. The wall ultimately stretched over 13,000 miles across northern China.",
+    "facts": [
+      "The wall is not visible from space with the naked eye, despite the popular myth.",
+      "Workers who died during construction were sometimes buried within the wall itself."
+    ],
+    "difficulty": "easy",
+    "era": "ancient",
+    "region": "Asia"
+  },
+  {
+    "id": 14,
+    "title": "Titanic Departure",
+    "year": 1912,
+    "clue": "The 'unsinkable' ship departed from this port on its maiden voyage, never to return.",
+    "lat": 50.8998,
+    "lng": -1.4044,
+    "description": "RMS Titanic departed from Southampton, England on April 10, 1912, on its maiden voyage to New York City. It struck an iceberg and sank on April 15.",
+    "facts": [
+      "There were only enough lifeboats for about one-third of the passengers.",
+      "The ship's band famously continued to play as the ship sank."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 15,
+    "title": "Nelson Mandela's Imprisonment — Robben Island",
+    "year": 1964,
+    "clue": "An island prison where a future president spent 18 of his 27 years of imprisonment.",
+    "lat": -33.8076,
+    "lng": 18.3713,
+    "description": "Nelson Mandela was imprisoned on Robben Island from 1964 to 1982. He spent 27 total years in prison before becoming South Africa's first Black president in 1994.",
+    "facts": [
+      "Mandela's cell was only 8 by 7 feet.",
+      "Robben Island is now a UNESCO World Heritage Site and museum."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Africa"
+  },
+  {
+    "id": 16,
+    "title": "Boston Tea Party",
+    "year": 1773,
+    "clue": "Colonists disguised as natives dumped cargo into a harbor to protest taxation without representation.",
+    "lat": 42.3519,
+    "lng": -71.0512,
+    "description": "On December 16, 1773, American colonists dressed as Mohawk Indians boarded British ships and dumped 342 chests of tea into Boston Harbor.",
+    "facts": [
+      "The tea destroyed was worth about $1.7 million in today's money.",
+      "The term 'Boston Tea Party' wasn't used until 50 years after the event."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 17,
+    "title": "Pompeii Destruction — Eruption of Vesuvius",
+    "year": 79,
+    "clue": "A Roman city frozen in time by a catastrophic volcanic eruption that buried it under meters of ash.",
+    "lat": 40.7509,
+    "lng": 14.4869,
+    "description": "In 79 AD, Mount Vesuvius erupted and buried the Roman city of Pompeii under volcanic ash, preserving it remarkably for nearly 2,000 years.",
+    "facts": [
+      "About 2,000 people died in the eruption out of a population of 20,000.",
+      "The city was accidentally rediscovered in 1748 during construction."
+    ],
+    "difficulty": "medium",
+    "era": "ancient",
+    "region": "Europe"
+  },
+  {
+    "id": 18,
+    "title": "Wright Brothers' First Flight",
+    "year": 1903,
+    "clue": "Sand dunes and steady winds at this coastal location helped achieve the first powered airplane flight.",
+    "lat": 36.0143,
+    "lng": -75.6671,
+    "description": "On December 17, 1903, Orville and Wilbur Wright made the first sustained, controlled, powered heavier-than-air flight at Kitty Hawk, North Carolina.",
+    "facts": [
+      "The first flight lasted only 12 seconds and covered 120 feet.",
+      "The brothers built their own wind tunnel to test wing designs."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 19,
+    "title": "Chernobyl Nuclear Disaster",
+    "year": 1986,
+    "clue": "The worst nuclear accident in history occurred at this power plant, creating a permanent exclusion zone.",
+    "lat": 51.3891,
+    "lng": 30.0993,
+    "description": "On April 26, 1986, Reactor No. 4 at the Chernobyl Nuclear Power Plant in northern Ukraine exploded during a safety test, releasing radioactive contamination across Europe.",
+    "facts": [
+      "The 30-km exclusion zone around Chernobyl has become a wildlife sanctuary.",
+      "The reactor was covered with a massive 'New Safe Confinement' structure completed in 2016."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 20,
+    "title": "Discovery of Tutankhamun's Tomb",
+    "year": 1922,
+    "clue": "Archaeologists discovered an intact pharaoh's tomb in a famous valley, revealing stunning golden treasures.",
+    "lat": 25.7402,
+    "lng": 32.6014,
+    "description": "On November 4, 1922, Howard Carter discovered the tomb of Tutankhamun in the Valley of the Kings, one of the most significant archaeological finds in history.",
+    "facts": [
+      "The tomb contained over 5,000 artifacts, including the iconic gold death mask.",
+      "Carter spent 10 years cataloging the contents of the tomb."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Africa"
+  },
+  {
+    "id": 21,
+    "title": "Taj Mahal Construction",
+    "year": 1632,
+    "clue": "An emperor built this iconic white marble mausoleum as a monument to his beloved wife.",
+    "lat": 27.1751,
+    "lng": 78.0421,
+    "description": "The Taj Mahal was commissioned in 1632 by Mughal Emperor Shah Jahan as a mausoleum for his wife Mumtaz Mahal. It took about 20 years and 20,000 workers to complete.",
+    "facts": [
+      "The Taj Mahal changes color throughout the day — pinkish in the morning, white during the day, and golden under moonlight.",
+      "Over 1,000 elephants were used to transport construction materials."
+    ],
+    "difficulty": "easy",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 22,
+    "title": "Battle of Gettysburg",
+    "year": 1863,
+    "clue": "The bloodiest battle of the American Civil War, fought in a small Pennsylvania town over three days.",
+    "lat": 39.8109,
+    "lng": -77.2275,
+    "description": "The Battle of Gettysburg (July 1-3, 1863) was the turning point of the American Civil War, resulting in over 50,000 combined casualties.",
+    "facts": [
+      "Lincoln's famous Gettysburg Address was only 272 words long.",
+      "The battlefield covers over 6,000 acres and contains over 1,300 monuments."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 23,
+    "title": "Rosetta Stone Discovery",
+    "year": 1799,
+    "clue": "Soldiers found a stone slab in a northern port town that became the key to deciphering ancient hieroglyphics.",
+    "lat": 31.396,
+    "lng": 30.4167,
+    "description": "The Rosetta Stone was discovered in 1799 by French soldiers in the town of Rashid (Rosetta), Egypt. It contained the same text in three scripts, enabling the decipherment of Egyptian hieroglyphics.",
+    "facts": [
+      "The stone is actually a fragment of a larger stele.",
+      "Jean-François Champollion cracked the hieroglyphic code in 1822 using the stone."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Africa"
+  },
+  {
+    "id": 24,
+    "title": "Pearl Harbor Attack",
+    "year": 1941,
+    "clue": "A surprise military strike on a naval base drew a nation into the Second World War.",
+    "lat": 21.365,
+    "lng": -157.95,
+    "description": "On December 7, 1941, Japan launched a surprise attack on the U.S. naval base at Pearl Harbor, Hawaii, killing 2,403 Americans and drawing the United States into World War II.",
+    "facts": [
+      "The attack lasted only about 110 minutes.",
+      "The USS Arizona memorial sits directly above the sunken battleship, which still leaks oil."
+    ],
+    "difficulty": "easy",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 25,
+    "title": "Angkor Wat Construction",
+    "year": 1150,
+    "clue": "The world's largest religious monument, originally built as a Hindu temple, later converted to Buddhist use.",
+    "lat": 13.4125,
+    "lng": 103.867,
+    "description": "Angkor Wat was built in the first half of the 12th century by King Suryavarman II of the Khmer Empire. It is the best-preserved temple at the Angkor archaeological site.",
+    "facts": [
+      "It is the largest religious structure in the world, covering 402 acres.",
+      "The temple appears on Cambodia's national flag."
+    ],
+    "difficulty": "medium",
+    "era": "medieval",
+    "region": "Asia"
+  },
+  {
+    "id": 26,
+    "title": "Martin Luther's 95 Theses",
+    "year": 1517,
+    "clue": "A monk nailed a list of grievances to a church door, sparking a religious reformation across a continent.",
+    "lat": 51.8663,
+    "lng": 12.6396,
+    "description": "On October 31, 1517, Martin Luther reportedly nailed his 95 Theses to the door of All Saints' Church in Wittenberg, Germany, sparking the Protestant Reformation.",
+    "facts": [
+      "Luther originally wrote the theses in Latin, not German.",
+      "The church door served as a kind of community bulletin board at the time."
+    ],
+    "difficulty": "hard",
+    "era": "medieval",
+    "region": "Europe"
+  },
+  {
+    "id": 27,
+    "title": "Treaty of Versailles Signing",
+    "year": 1919,
+    "clue": "The peace treaty ending the Great War was signed in the Hall of Mirrors at a famous palace.",
+    "lat": 48.8049,
+    "lng": 2.1204,
+    "description": "The Treaty of Versailles was signed on June 28, 1919, at the Palace of Versailles, officially ending World War I and imposing harsh terms on Germany.",
+    "facts": [
+      "The treaty's harsh terms are often cited as a contributing factor to World War II.",
+      "The Hall of Mirrors where it was signed contains 357 mirrors."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 28,
+    "title": "Galileo's Trial by the Inquisition",
+    "year": 1633,
+    "clue": "A scientist faced trial for supporting the theory that the Earth revolves around the Sun.",
+    "lat": 41.9022,
+    "lng": 12.4565,
+    "description": "In 1633, Galileo Galilei was tried by the Roman Inquisition in Rome for promoting heliocentrism. He was found guilty and spent the rest of his life under house arrest.",
+    "facts": [
+      "Galileo reportedly muttered 'And yet it moves' after his forced recantation.",
+      "The Catholic Church formally apologized to Galileo in 1992."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 29,
+    "title": "Battle of Waterloo",
+    "year": 1815,
+    "clue": "A decisive battle that ended the rule of a famous French emperor and reshaped European politics.",
+    "lat": 50.68,
+    "lng": 4.4122,
+    "description": "The Battle of Waterloo on June 18, 1815, saw Napoleon Bonaparte defeated by the Duke of Wellington and Prussian forces, ending his reign and the Napoleonic Wars.",
+    "facts": [
+      "The battle lasted about 9 hours.",
+      "Napoleon was exiled to the remote island of Saint Helena after the defeat."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 30,
+    "title": "Petra — Construction of the Treasury",
+    "year": -312,
+    "clue": "A stunning rock-carved facade in a desert canyon, built by an ancient Arab civilization of traders.",
+    "lat": 30.3286,
+    "lng": 35.4419,
+    "description": "Petra, the Nabataean capital in modern-day Jordan, was established around 312 BC. Its most famous structure, Al-Khazneh (The Treasury), was carved directly into sandstone cliffs.",
+    "facts": [
+      "Petra was named one of the New Seven Wonders of the World in 2007.",
+      "The city had a sophisticated water management system with dams and cisterns."
+    ],
+    "difficulty": "medium",
+    "era": "ancient",
+    "region": "Asia"
+  },
+  {
+    "id": 31,
+    "title": "Russian Revolution — Storming of the Winter Palace",
+    "year": 1917,
+    "clue": "Revolutionaries seized a grand palace, overthrowing a provisional government and establishing communist rule.",
+    "lat": 59.9398,
+    "lng": 30.3146,
+    "description": "On October 25-26, 1917, Bolshevik forces stormed the Winter Palace in Petrograd (now St. Petersburg), toppling the Russian Provisional Government.",
+    "facts": [
+      "The actual storming was relatively peaceful, contrary to dramatic movie depictions.",
+      "The Winter Palace now houses the Hermitage Museum, one of the world's largest art collections."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 32,
+    "title": "Panama Canal Opening",
+    "year": 1914,
+    "clue": "A massive engineering feat connecting two oceans through a narrow land bridge between continents.",
+    "lat": 9.08,
+    "lng": -79.68,
+    "description": "The Panama Canal officially opened on August 15, 1914, connecting the Atlantic and Pacific Oceans and revolutionizing global maritime trade.",
+    "facts": [
+      "Over 25,000 workers died during the French and American construction periods, mainly from disease.",
+      "Ships are raised 85 feet above sea level through a series of locks."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 33,
+    "title": "Terracotta Army Discovery",
+    "year": 1974,
+    "clue": "Farmers digging a well accidentally uncovered thousands of life-sized clay soldiers guarding an emperor's tomb.",
+    "lat": 34.3843,
+    "lng": 109.2733,
+    "description": "In 1974, farmers near Xi'an, China, discovered the Terracotta Army — over 8,000 unique clay soldiers buried with China's first emperor, Qin Shi Huang.",
+    "facts": [
+      "No two warriors have the same face.",
+      "The tomb of the emperor himself has never been opened, partly due to legends of mercury rivers inside."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 34,
+    "title": "Partition of India",
+    "year": 1947,
+    "clue": "The division of a subcontinent into two nations at independence led to one of the largest mass migrations in history.",
+    "lat": 28.6139,
+    "lng": 77.209,
+    "description": "On August 15, 1947, British India was partitioned into India and Pakistan, triggering massive population transfers and communal violence affecting over 15 million people.",
+    "facts": [
+      "An estimated 1-2 million people died in the violence surrounding partition.",
+      "The border was drawn by a British lawyer who had never visited India before."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 35,
+    "title": "Coronation of Charlemagne",
+    "year": 800,
+    "clue": "A Frankish king was crowned emperor by the Pope on Christmas Day, reviving the idea of a Western Roman Empire.",
+    "lat": 41.9022,
+    "lng": 12.4539,
+    "description": "On December 25, 800 AD, Pope Leo III crowned Charlemagne as Emperor of the Romans at St. Peter's Basilica in Rome, establishing the Holy Roman Empire.",
+    "facts": [
+      "Charlemagne could speak Latin and Greek but reportedly could not write.",
+      "His empire covered most of Western Europe."
+    ],
+    "difficulty": "hard",
+    "era": "medieval",
+    "region": "Europe"
+  },
+  {
+    "id": 36,
+    "title": "Cuban Missile Crisis",
+    "year": 1962,
+    "clue": "A 13-day confrontation between superpowers over nuclear missiles placed on a Caribbean island.",
+    "lat": 23.0235,
+    "lng": -81.5476,
+    "description": "In October 1962, the Soviet Union placed nuclear missiles in Cuba, bringing the U.S. and USSR to the brink of nuclear war. The crisis was resolved through diplomacy.",
+    "facts": [
+      "Soviet submarine officer Vasili Arkhipov may have single-handedly prevented nuclear war by refusing to launch a torpedo.",
+      "The crisis lasted exactly 13 days, from October 16-28."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 37,
+    "title": "Acropolis of Athens — Construction of the Parthenon",
+    "year": -447,
+    "clue": "A marble temple dedicated to a goddess of wisdom, built atop a hill overlooking a famous ancient city-state.",
+    "lat": 37.9715,
+    "lng": 23.7257,
+    "description": "The Parthenon was built between 447-432 BC on the Athenian Acropolis, dedicated to the goddess Athena. It is considered the epitome of Classical Greek architecture.",
+    "facts": [
+      "The Parthenon has no straight lines — the columns lean slightly inward and the base curves upward.",
+      "Lord Elgin controversially removed many of its marble sculptures in the early 1800s."
+    ],
+    "difficulty": "easy",
+    "era": "ancient",
+    "region": "Europe"
+  },
+  {
+    "id": 38,
+    "title": "Lewis and Clark Expedition Start",
+    "year": 1804,
+    "clue": "An expedition departed from a frontier town near two great rivers to explore newly purchased western territory.",
+    "lat": 38.8033,
+    "lng": -90.1209,
+    "description": "The Lewis and Clark Expedition departed from Camp Dubois near St. Louis on May 14, 1804, to explore the newly acquired Louisiana Purchase territory and find a route to the Pacific.",
+    "facts": [
+      "The expedition covered approximately 8,000 miles over 2.5 years.",
+      "Sacagawea, a Shoshone woman, served as interpreter and guide for much of the journey."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 39,
+    "title": "Tiananmen Square Protests",
+    "year": 1989,
+    "clue": "Pro-democracy protesters gathered in a massive public square before a military crackdown shocked the world.",
+    "lat": 39.9054,
+    "lng": 116.3976,
+    "description": "In June 1989, pro-democracy protests in Beijing's Tiananmen Square were violently suppressed by the Chinese military. The iconic 'Tank Man' image became a global symbol of resistance.",
+    "facts": [
+      "The protests lasted about 7 weeks before the crackdown.",
+      "The exact number of casualties remains unknown and is still censored in China."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Asia"
+  },
+  {
+    "id": 40,
+    "title": "Abolition of Slavery — Emancipation Proclamation",
+    "year": 1863,
+    "clue": "A president issued a proclamation from the executive mansion declaring enslaved people in rebel states to be free.",
+    "lat": 38.8977,
+    "lng": -77.0365,
+    "description": "On January 1, 1863, President Abraham Lincoln issued the Emancipation Proclamation from the White House, declaring all enslaved people in Confederate states to be free.",
+    "facts": [
+      "The Proclamation only freed enslaved people in Confederate states, not border states.",
+      "It transformed the Civil War into a fight for human liberty, not just preservation of the Union."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 41,
+    "title": "Stonehenge Construction",
+    "year": -3000,
+    "clue": "A mysterious circle of massive standing stones on a plain, aligned with the solstice sunrise.",
+    "lat": 51.1789,
+    "lng": -1.8262,
+    "description": "Stonehenge on Salisbury Plain, England, was built in stages from around 3000 BC. Its purpose remains debated, but it aligns precisely with the summer solstice sunrise.",
+    "facts": [
+      "Some stones were transported over 150 miles from Wales.",
+      "The largest stones weigh about 25 tons each."
+    ],
+    "difficulty": "easy",
+    "era": "ancient",
+    "region": "Europe"
+  },
+  {
+    "id": 42,
+    "title": "Opening of the Suez Canal",
+    "year": 1869,
+    "clue": "A canal was built through a desert isthmus, connecting two seas and revolutionizing global shipping routes.",
+    "lat": 30.5852,
+    "lng": 32.2654,
+    "description": "The Suez Canal opened on November 17, 1869, connecting the Mediterranean Sea to the Red Sea and eliminating the need to sail around Africa.",
+    "facts": [
+      "The canal is about 120 miles long and has no locks.",
+      "An estimated 1.5 million workers were involved in the construction, with thousands dying."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Africa"
+  },
+  {
+    "id": 43,
+    "title": "Aztec Capital Tenochtitlan",
+    "year": 1325,
+    "clue": "An empire built its capital city on an island in a lake, with causeways and canals rivaling European cities.",
+    "lat": 19.4326,
+    "lng": -99.1332,
+    "description": "Tenochtitlan was founded in 1325 on an island in Lake Texcoco, becoming the capital of the Aztec Empire. It was one of the largest cities in the world with a population of over 200,000.",
+    "facts": [
+      "Modern Mexico City is built directly on top of Tenochtitlan's ruins.",
+      "The city featured a complex system of aqueducts and floating gardens called chinampas."
+    ],
+    "difficulty": "hard",
+    "era": "medieval",
+    "region": "North America"
+  },
+  {
+    "id": 44,
+    "title": "Signing of the Treaty of Waitangi",
+    "year": 1840,
+    "clue": "A treaty between indigenous chiefs and a colonial power that became the founding document of a Pacific island nation.",
+    "lat": -35.26,
+    "lng": 174.0919,
+    "description": "The Treaty of Waitangi was signed on February 6, 1840, between the British Crown and Maori chiefs in New Zealand, establishing British law while protecting Maori rights.",
+    "facts": [
+      "There are significant differences between the English and Maori versions of the treaty.",
+      "Waitangi Day on February 6 is New Zealand's national day."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Oceania"
+  },
+  {
+    "id": 45,
+    "title": "Building of the Hagia Sophia",
+    "year": 537,
+    "clue": "An emperor built the world's largest cathedral at the crossroads of Europe and Asia, featuring a revolutionary dome.",
+    "lat": 41.0086,
+    "lng": 28.9802,
+    "description": "The Hagia Sophia was built in Constantinople (Istanbul) by Emperor Justinian I, completed in 537 AD. It served as a cathedral, mosque, museum, and is now a mosque again.",
+    "facts": [
+      "Its massive dome spans 31 meters and seemed to 'float' above the building.",
+      "It remained the world's largest cathedral for nearly 1,000 years."
+    ],
+    "difficulty": "medium",
+    "era": "medieval",
+    "region": "Europe"
+  },
+  {
+    "id": 46,
+    "title": "Gold Rush — Sutter's Mill Discovery",
+    "year": 1848,
+    "clue": "Gold was found at a sawmill, triggering a massive migration of prospectors to the American West.",
+    "lat": 38.7946,
+    "lng": -120.8906,
+    "description": "On January 24, 1848, James W. Marshall discovered gold at Sutter's Mill in Coloma, California, sparking the California Gold Rush that drew 300,000 people west.",
+    "facts": [
+      "The Gold Rush increased California's population from about 14,000 to 300,000 in just four years.",
+      "John Sutter, who owned the mill, actually went bankrupt because of the Gold Rush."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 47,
+    "title": "Mayan City of Chichen Itza — El Castillo",
+    "year": 600,
+    "clue": "An ancient pyramid in the jungle designed so that a serpent shadow appears during the equinox.",
+    "lat": 20.6843,
+    "lng": -88.5678,
+    "description": "El Castillo (Temple of Kukulcán) at Chichen Itza was built around 600 AD by the Maya civilization. During equinoxes, shadows create a serpent pattern descending the stairs.",
+    "facts": [
+      "The pyramid has exactly 365 steps, one for each day of the year.",
+      "Clapping at the base produces an echo that sounds like a quetzal bird."
+    ],
+    "difficulty": "easy",
+    "era": "medieval",
+    "region": "North America"
+  },
+  {
+    "id": 48,
+    "title": "Galileo's Telescope Observations in Padua",
+    "year": 1610,
+    "clue": "An astronomer pointed a new instrument at the sky from this Italian university city and changed our understanding of the cosmos.",
+    "lat": 45.4064,
+    "lng": 11.8768,
+    "description": "In 1610, Galileo Galilei made groundbreaking astronomical observations from Padua, Italy, discovering Jupiter's moons and the phases of Venus.",
+    "facts": [
+      "Galileo's telescope had only 20x magnification, less than modern binoculars.",
+      "He named Jupiter's four large moons the 'Medicean Stars' to honor his patrons."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Europe"
+  },
+  {
+    "id": 49,
+    "title": "Zulu Victory at Battle of Isandlwana",
+    "year": 1879,
+    "clue": "A major African military force defeated a powerful European colonial army in a stunning upset during the Anglo-Zulu War.",
+    "lat": -28.35,
+    "lng": 30.65,
+    "description": "On January 22, 1879, Zulu warriors overwhelmed a British force at Isandlwana in South Africa, inflicting the worst defeat by indigenous forces on the British Empire.",
+    "facts": [
+      "Over 1,300 British soldiers were killed, while the Zulus lost about 1,000.",
+      "The Zulu army used a tactical formation called the 'horns of the buffalo.'"
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "Africa"
+  },
+  {
+    "id": 50,
+    "title": "Silk Road — Ancient Trade Route",
+    "year": -130,
+    "clue": "An ancient network of trade routes began from this imperial capital, connecting East and West for centuries.",
+    "lat": 34.2658,
+    "lng": 108.9541,
+    "description": "The Silk Road trade network was established around 130 BC, with Xi'an (then Chang'an) as its eastern terminus, connecting China to the Mediterranean world.",
+    "facts": [
+      "The name 'Silk Road' was coined by German geographer Ferdinand von Richthofen in 1877.",
+      "Besides silk, goods like spices, gold, glass, and ideas traveled along the routes."
+    ],
+    "difficulty": "hard",
+    "era": "ancient",
+    "region": "Asia"
+  },
+  {
+    "id": 51,
+    "title": "Martin Luther King Jr.'s 'I Have a Dream' Speech",
+    "year": 1963,
+    "clue": "A civil rights leader delivered a famous speech before thousands gathered at a national monument.",
+    "lat": 38.8893,
+    "lng": -77.0502,
+    "description": "On August 28, 1963, Martin Luther King Jr. delivered his 'I Have a Dream' speech from the steps of the Lincoln Memorial during the March on Washington for Jobs and Freedom.",
+    "facts": [
+      "Over 250,000 people attended the March on Washington.",
+      "The 'I Have a Dream' portion was partly improvised, encouraged by gospel singer Mahalia Jackson."
+    ],
+    "difficulty": "easy",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 52,
+    "title": "Eruption of Mount Vesuvius (Pompeii)",
+    "year": 79,
+    "clue": "A catastrophic volcanic eruption buried entire Roman cities under ash, preserving them for millennia.",
+    "lat": 40.821,
+    "lng": 14.4264,
+    "description": "Mount Vesuvius erupted in 79 AD, burying the Roman cities of Pompeii and Herculaneum. The eruption lasted about 24 hours and released thermal energy far exceeding the Hiroshima bombing.",
+    "facts": [
+      "Pliny the Younger wrote the only surviving eyewitness account of the eruption.",
+      "The type of eruption is now called 'Plinian' after Pliny the Elder, who died investigating it."
+    ],
+    "difficulty": "medium",
+    "era": "ancient",
+    "region": "Europe"
+  },
+  {
+    "id": 53,
+    "title": "First Olympic Games",
+    "year": -776,
+    "clue": "The first organized athletic competition in the Western world was held at a sacred site in ancient Greece.",
+    "lat": 37.6388,
+    "lng": 21.63,
+    "description": "The first recorded Olympic Games were held in 776 BC at Olympia, Greece. They were dedicated to Zeus and held every four years for over 1,000 years.",
+    "facts": [
+      "The only event in the first Olympics was a 192-meter sprint called the 'stadion.'",
+      "A sacred truce was called during the games, halting all wars between Greek city-states."
+    ],
+    "difficulty": "hard",
+    "era": "ancient",
+    "region": "Europe"
+  },
+  {
+    "id": 54,
+    "title": "Assassination of Julius Caesar",
+    "year": -44,
+    "clue": "A dictator was stabbed to death by senators on the Ides of March in a famous political assassination.",
+    "lat": 41.8955,
+    "lng": 12.4771,
+    "description": "On March 15, 44 BC, Julius Caesar was assassinated by a group of Roman senators, including Brutus and Cassius, at the Theatre of Pompey in Rome.",
+    "facts": [
+      "Caesar was stabbed 23 times.",
+      "His last words to Brutus are debated — Shakespeare's 'Et tu, Brute?' is likely dramatic invention."
+    ],
+    "difficulty": "medium",
+    "era": "ancient",
+    "region": "Europe"
+  },
+  {
+    "id": 55,
+    "title": "Founding of Constantinople",
+    "year": 330,
+    "clue": "A Roman emperor founded a new capital city at a strategic strait between two continents.",
+    "lat": 41.0082,
+    "lng": 28.9784,
+    "description": "Emperor Constantine I founded Constantinople (modern Istanbul) in 330 AD as the new capital of the Roman Empire, strategically located on the Bosphorus strait.",
+    "facts": [
+      "The city was protected by massive walls that withstood sieges for over 1,000 years.",
+      "Constantinople was the largest and wealthiest city in Europe for most of the Middle Ages."
+    ],
+    "difficulty": "medium",
+    "era": "ancient",
+    "region": "Europe"
+  },
+  {
+    "id": 56,
+    "title": "Rwandan Genocide",
+    "year": 1994,
+    "clue": "A devastating genocide occurred in this small African nation over approximately 100 days.",
+    "lat": -1.9403,
+    "lng": 29.8739,
+    "description": "Between April and July 1994, an estimated 800,000 Rwandans, primarily Tutsis and moderate Hutus, were killed in one of the fastest genocides in history.",
+    "facts": [
+      "The killing lasted approximately 100 days.",
+      "The international community has been widely criticized for failing to intervene."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Africa"
+  },
+  {
+    "id": 57,
+    "title": "Marco Polo Arrives in China",
+    "year": 1275,
+    "clue": "A Venetian merchant arrived at the court of a Mongol emperor after a years-long journey across Asia.",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "description": "Marco Polo reached the court of Kublai Khan in Beijing around 1275, beginning a 17-year stay in China. His later accounts introduced Europeans to Asian civilization.",
+    "facts": [
+      "Some historians question whether Polo actually visited China, as he never mentioned the Great Wall or tea.",
+      "His book 'The Travels of Marco Polo' inspired Christopher Columbus."
+    ],
+    "difficulty": "hard",
+    "era": "medieval",
+    "region": "Asia"
+  },
+  {
+    "id": 58,
+    "title": "First Transatlantic Flight — Charles Lindbergh",
+    "year": 1927,
+    "clue": "An aviator departed from a New York airfield for a solo nonstop flight across the Atlantic Ocean.",
+    "lat": 40.7283,
+    "lng": -73.6042,
+    "description": "On May 20, 1927, Charles Lindbergh took off from Roosevelt Field on Long Island in the Spirit of St. Louis, completing the first solo nonstop transatlantic flight.",
+    "facts": [
+      "The flight took 33.5 hours, covering 3,610 miles.",
+      "Lindbergh stayed awake for 55 hours straight during the preparation and flight."
+    ],
+    "difficulty": "hard",
+    "era": "modern",
+    "region": "North America"
+  },
+  {
+    "id": 59,
+    "title": "Viking Settlement at L'Anse aux Meadows",
+    "year": 1000,
+    "clue": "Norse explorers established the first known European settlement in the Americas, centuries before Columbus.",
+    "lat": 51.5882,
+    "lng": -55.5335,
+    "description": "Around 1000 AD, Vikings led by Leif Erikson established a settlement at L'Anse aux Meadows in Newfoundland, Canada — the earliest known European settlement in the Americas.",
+    "facts": [
+      "The site was discovered in 1960 by Norwegian explorers.",
+      "It predates Columbus's arrival by nearly 500 years."
+    ],
+    "difficulty": "hard",
+    "era": "medieval",
+    "region": "North America"
+  },
+  {
+    "id": 60,
+    "title": "Apartheid Begins in South Africa",
+    "year": 1948,
+    "clue": "A system of institutionalized racial segregation was formally established when a new government took power in this city.",
+    "lat": -33.9249,
+    "lng": 18.4241,
+    "description": "In 1948, the National Party won elections in South Africa and began implementing apartheid — a system of institutionalized racial segregation that lasted until 1994.",
+    "facts": [
+      "The word 'apartheid' means 'separateness' in Afrikaans.",
+      "South Africa was banned from the Olympic Games from 1964 to 1992 due to apartheid."
+    ],
+    "difficulty": "medium",
+    "era": "modern",
+    "region": "Africa"
+  }
+]
