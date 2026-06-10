@@ -59,7 +59,7 @@ export default function ChallengeScreen() {
           </svg>
         </button>
         <div className="flex items-center gap-2">
-          <span className="text-cyan font-bold text-sm readout uppercase tracking-wider">Phase {currentChallengeIndex + 1}/5</span>
+          <span className="text-cyan font-bold text-sm readout uppercase tracking-wider">Round {currentChallengeIndex + 1}/5</span>
           <span className={`text-[10px] px-2 py-0.5 rounded uppercase tracking-wider font-bold border ${
             challenge.difficulty === 'hard' ? 'border-red-score/40 text-red-score bg-red-score/10' :
             challenge.difficulty === 'medium' ? 'border-orange-score/40 text-orange-score bg-orange-score/10' :
@@ -82,7 +82,7 @@ export default function ChallengeScreen() {
           className="w-full px-4 py-2.5 flex items-center justify-between text-left"
         >
           <span className="text-cyan text-xs font-bold truncate pr-2 uppercase tracking-wider">
-            {clueExpanded ? '// Deploy pin to target coordinates' : `Intel: ${challenge.clue.slice(0, 50)}...`}
+            {clueExpanded ? '// Drop your pin on the map' : `Clue: ${challenge.clue.slice(0, 50)}...`}
           </span>
           <svg
             width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
@@ -122,18 +122,18 @@ export default function ChallengeScreen() {
           )}
         </MapContainer>
 
-        {/* Crosshair indicator when no pin */}
+        {/* Tap to place pin footer */}
         {!pinPosition && (
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[500]">
-            <div className="flex flex-col items-center gap-2 bg-dark-bg/80 border border-cyan/20 px-4 py-3 rounded-lg">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" strokeWidth="1.5">
+          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 pointer-events-none z-[500]">
+            <div className="flex items-center gap-2 bg-dark-bg/80 border border-cyan/20 px-3 py-1.5 rounded-full">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" strokeWidth="1.5">
                 <circle cx="12" cy="12" r="10"/>
                 <line x1="12" y1="2" x2="12" y2="6"/>
                 <line x1="12" y1="18" x2="12" y2="22"/>
                 <line x1="2" y1="12" x2="6" y2="12"/>
                 <line x1="18" y1="12" x2="22" y2="12"/>
               </svg>
-              <span className="text-cyan text-[10px] font-bold uppercase tracking-[0.15em]">Deploy Pin</span>
+              <span className="text-cyan text-[10px] font-bold uppercase tracking-[0.15em]">Tap to Place Pin</span>
             </div>
           </div>
         )}
@@ -150,7 +150,7 @@ export default function ChallengeScreen() {
               : 'bg-dark-card border border-dark-border text-parchment-dark/50 cursor-not-allowed'
           }`}
         >
-          {pinPosition ? 'Confirm Target' : 'Awaiting Coordinates...'}
+          {pinPosition ? 'Lock In Guess' : 'Place Your Pin...'}
         </button>
       </div>
     </div>

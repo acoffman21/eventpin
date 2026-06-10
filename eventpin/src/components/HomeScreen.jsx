@@ -34,7 +34,7 @@ export default function HomeScreen() {
         </div>
         <div className="flex items-center justify-center gap-2 text-parchment-dark text-xs tracking-[0.15em] uppercase">
           <span className="w-8 h-px bg-cyan-dim opacity-50"></span>
-          <span>Tactical History Operations</span>
+          <span>Pin the Past to the Map</span>
           <span className="w-8 h-px bg-cyan-dim opacity-50"></span>
         </div>
       </div>
@@ -43,7 +43,7 @@ export default function HomeScreen() {
       <div className="bg-dark-surface border border-dark-border rounded-lg p-5 mb-4 tactical-card">
         <div className="tactical-card-inner">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-cyan font-semibold text-sm tracking-[0.1em] uppercase">Mission Briefing</h2>
+            <h2 className="text-cyan font-semibold text-sm tracking-[0.1em] uppercase">Today's Challenge</h2>
             <span className="text-gold readout text-sm font-bold">[{getProgress()}]</span>
           </div>
 
@@ -73,7 +73,7 @@ export default function HomeScreen() {
           {/* Score Display */}
           {challengeResults.length > 0 && (
             <div className="text-center mb-4">
-              <p className="text-parchment-dark text-xs uppercase tracking-[0.15em] mb-1">Current Intel Score</p>
+              <p className="text-parchment-dark text-xs uppercase tracking-[0.15em] mb-1">Today's Score</p>
               <p className="text-2xl font-bold text-gold-light readout">{totalScore.toLocaleString()}</p>
             </div>
           )}
@@ -84,14 +84,14 @@ export default function HomeScreen() {
               onClick={goToSummary}
               className="w-full py-4 rounded-lg bg-green-accent/20 border border-green-accent text-green-accent font-bold text-sm btn-tactical"
             >
-              View Mission Report
+              View Results
             </button>
           ) : (
             <button
               onClick={startChallenge}
               className="w-full py-4 rounded-lg bg-cyan/10 border border-cyan text-cyan font-bold text-sm btn-tactical glow-cyan"
             >
-              {currentChallengeIndex === 0 ? 'Initiate Mission' : 'Resume Operations'}
+              {currentChallengeIndex === 0 ? 'Start Playing' : 'Keep Going'}
             </button>
           )}
         </div>
@@ -105,7 +105,7 @@ export default function HomeScreen() {
         </div>
         <div className="bg-dark-surface border border-dark-border rounded-lg p-3 text-center tactical-card">
           <p className="text-2xl font-bold text-cyan readout">{gamesPlayed}</p>
-          <p className="text-[10px] text-parchment-dark mt-1 uppercase tracking-wider">Ops</p>
+          <p className="text-[10px] text-parchment-dark mt-1 uppercase tracking-wider">Played</p>
         </div>
         <div className="bg-dark-surface border border-dark-border rounded-lg p-3 text-center tactical-card">
           <p className="text-2xl font-bold text-gold readout">{bestScore.toLocaleString()}</p>
@@ -117,7 +117,7 @@ export default function HomeScreen() {
       {allTimeScores.length > 0 && (
         <div className="bg-dark-surface border border-dark-border rounded-lg p-4 tactical-card">
           <div className="tactical-card-inner">
-            <h3 className="text-cyan font-semibold mb-3 text-sm uppercase tracking-wider">Operation Log</h3>
+            <h3 className="text-cyan font-semibold mb-3 text-sm uppercase tracking-wider">Recent Scores</h3>
             <div className="space-y-0 max-h-48 overflow-y-auto">
               {[...allTimeScores].reverse().slice(0, 7).map((s, i) => (
                 <div key={i} className="flex justify-between items-center text-sm py-2 border-b border-dark-border/50 last:border-b-0">
@@ -133,29 +133,29 @@ export default function HomeScreen() {
       {/* How to Play */}
       <div className="mt-4 bg-dark-surface border border-dark-border rounded-lg p-4 tactical-card">
         <div className="tactical-card-inner">
-          <h3 className="text-cyan font-semibold mb-3 text-sm uppercase tracking-wider">Operational Briefing</h3>
+          <h3 className="text-cyan font-semibold mb-3 text-sm uppercase tracking-wider">How to Play</h3>
           <div className="space-y-3 text-sm text-parchment-dark">
             <div className="flex gap-3 items-start">
               <span className="text-cyan readout text-xs font-bold mt-0.5 w-6 shrink-0">[01]</span>
-              <p className="font-sans">Review the historical clue</p>
+              <p className="font-sans">Read the clue about a historical event</p>
             </div>
             <div className="flex gap-3 items-start">
               <span className="text-cyan readout text-xs font-bold mt-0.5 w-6 shrink-0">[02]</span>
-              <p className="font-sans">Deploy pin to target coordinates on the map</p>
+              <p className="font-sans">Drop your pin where you think it happened</p>
             </div>
             <div className="flex gap-3 items-start">
               <span className="text-cyan readout text-xs font-bold mt-0.5 w-6 shrink-0">[03]</span>
-              <p className="font-sans">Confirm target and assess accuracy</p>
+              <p className="font-sans">See how close you got and learn the story</p>
             </div>
             <div className="flex gap-3 items-start">
               <span className="text-cyan readout text-xs font-bold mt-0.5 w-6 shrink-0">[04]</span>
-              <p className="font-sans">Complete 5 daily ops. Maintain your streak.</p>
+              <p className="font-sans">Play all 5 rounds daily. Keep your streak alive!</p>
             </div>
           </div>
         </div>
       </div>
 
-      <p className="text-center text-parchment-dark/30 text-[10px] mt-4 mb-2 uppercase tracking-[0.2em]">EventPin v1.0 // Tactical History Operations</p>
+      <p className="text-center text-parchment-dark/30 text-[10px] mt-4 mb-2 uppercase tracking-[0.2em]">EventPin v1.0 // Know Where History Happened</p>
     </div>
   )
 }

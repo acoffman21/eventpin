@@ -13,33 +13,32 @@ function getScoreBar(score) {
 }
 
 function getOverallGrade(totalScore) {
-  if (totalScore >= 4500) return { grade: 'S', label: 'Commander', color: 'text-cyan' }
-  if (totalScore >= 3500) return { grade: 'A', label: 'Colonel', color: 'text-green-score' }
-  if (totalScore >= 2500) return { grade: 'B', label: 'Captain', color: 'text-gold' }
-  if (totalScore >= 1500) return { grade: 'C', label: 'Lieutenant', color: 'text-orange-score' }
-  return { grade: 'D', label: 'Recruit', color: 'text-red-score' }
+  if (totalScore >= 4500) return { grade: 'S', label: 'History Buff', color: 'text-cyan' }
+  if (totalScore >= 3500) return { grade: 'A', label: 'Scholar', color: 'text-green-score' }
+  if (totalScore >= 2500) return { grade: 'B', label: 'Explorer', color: 'text-gold' }
+  if (totalScore >= 1500) return { grade: 'C', label: 'Tourist', color: 'text-orange-score' }
+  return { grade: 'D', label: 'Lost', color: 'text-red-score' }
 }
 
 function generateShareText(totalScore, results, streak, challenges) {
   const indicators = results.map(r => {
-    if (r.totalScore >= 900) return '++++'
-    if (r.totalScore >= 700) return '+++'
-    if (r.totalScore >= 500) return '++'
-    if (r.totalScore >= 300) return '+'
-    return '-'
-  }).join(' | ')
+    if (r.totalScore >= 900) return '🟢'
+    if (r.totalScore >= 700) return '🟢'
+    if (r.totalScore >= 500) return '🟡'
+    if (r.totalScore >= 300) return '🟠'
+    return '🔴'
+  }).join('')
 
-  return `[EVENTPIN] Mission Report — ${new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+  return `EventPin — ${new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
 
 ${indicators}
 Score: ${totalScore.toLocaleString()} / 5,000
-${streak > 0 ? `${streak} day ops streak\n` : ''}
-eventpin.app`
+${streak > 0 ? `${streak} day streak\n` : ''}
+https://eventpin.vercel.app`
 }
 
 export default function SummaryScreen() {
   const goHome = useGameStore((s) => s.goHome)
-  const resetGame = useGameStore((s) => s.resetGame)
   const totalScore = useGameStore((s) => s.totalScore)
   const challengeResults = useGameStore((s) => s.challengeResults)
   const challenges = useGameStore((s) => s.challenges)
@@ -82,7 +81,7 @@ export default function SummaryScreen() {
     <div className="flex-1 flex flex-col overflow-y-auto bg-dark-bg px-4 py-6 topo-bg">
       {/* Header */}
       <div className="text-center mb-6 animate-glitch-reveal">
-        <p className="text-parchment-dark text-[10px] mb-3 uppercase tracking-[0.2em]">Mission Complete</p>
+        <p className="text-parchment-dark text-[10px] mb-3 uppercase tracking-[0.2em]">All Done!</p>
         <div className={`text-6xl font-bold ${grade.color} readout mb-1`}>{grade.grade}</div>
         <p className="text-gold text-sm uppercase tracking-wider">{grade.label}</p>
       </div>
@@ -105,7 +104,7 @@ export default function SummaryScreen() {
         <div className="text-center mb-4 animate-slide-up" style={{ animationDelay: '0.1s' }}>
           <span className="inline-flex items-center gap-2 bg-dark-surface border border-dark-border rounded-lg px-4 py-2">
             <span className="text-cyan readout font-bold">{streak}</span>
-            <span className="text-parchment-dark text-xs uppercase tracking-wider">day ops streak</span>
+            <span className="text-parchment-dark text-xs uppercase tracking-wider">day streak</span>
           </span>
         </div>
       )}
@@ -113,7 +112,7 @@ export default function SummaryScreen() {
       {/* Round Results */}
       <div className="bg-dark-surface border border-dark-border rounded-lg p-4 mb-4 animate-slide-up tactical-card" style={{ animationDelay: '0.2s' }}>
         <div className="tactical-card-inner">
-          <h3 className="text-cyan font-semibold mb-3 text-sm uppercase tracking-wider">Phase Breakdown</h3>
+          <h3 className="text-cyan font-semibold mb-3 text-sm uppercase tracking-wider">Round Breakdown</h3>
           <div className="space-y-3">
             {challengeResults.map((result, i) => {
               const event = challenges[i]
@@ -153,7 +152,7 @@ export default function SummaryScreen() {
           onClick={handleShare}
           className="w-full py-4 rounded-lg bg-cyan/10 border border-cyan text-cyan font-bold text-sm btn-tactical flex items-center justify-center gap-2"
         >
-          {shared ? 'Transmitted' : 'Transmit Report'}
+          {shared ? 'Copied!' : 'Share Score'}
         </button>
       </div>
 
@@ -161,17 +160,10 @@ export default function SummaryScreen() {
         onClick={goHome}
         className="w-full py-3 text-parchment-dark text-xs mb-2 uppercase tracking-wider"
       >
-        Return to Base
+        Back to Home
       </button>
 
-      <button
-        onClick={resetGame}
-        className="w-full py-3 rounded-lg border border-red-score/30 text-red-score text-xs font-bold uppercase tracking-wider btn-tactical mb-4"
-      >
-        Reset Operations
-      </button>
-
-      <p className="text-center text-parchment-dark/30 text-[10px] mb-2 uppercase tracking-[0.2em]">New ops available at 0000 UTC</p>
+      <p className="text-center text-parchment-dark/30 text-[10px] mb-2 uppercase tracking-[0.2em]">New challenges at midnight UTC</p>
     </div>
   )
 }

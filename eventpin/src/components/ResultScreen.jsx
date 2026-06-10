@@ -44,12 +44,12 @@ function getScoreColor(score) {
 }
 
 function getScoreLabel(score) {
-  if (score >= 900) return 'Direct Hit'
-  if (score >= 700) return 'On Target'
-  if (score >= 500) return 'Solid Intel'
-  if (score >= 300) return 'Partial Intel'
-  if (score >= 100) return 'Off Course'
-  return 'Mission Failed'
+  if (score >= 900) return 'Nailed It!'
+  if (score >= 700) return 'So Close!'
+  if (score >= 500) return 'Nice Work'
+  if (score >= 300) return 'Not Bad'
+  if (score >= 100) return 'Way Off'
+  return 'Better Luck Next Time'
 }
 
 function getScoreIndicator(score) {
@@ -212,7 +212,7 @@ export default function ResultScreen() {
           onClick={nextChallenge}
           className="w-full py-4 rounded-lg bg-cyan/10 border border-cyan text-cyan font-bold text-sm btn-tactical"
         >
-          {isLast ? 'View Mission Report' : `Next Phase [${currentChallengeIndex + 1}/5]`}
+          {isLast ? 'View Results' : `Next Round [${currentChallengeIndex + 1}/5]`}
         </button>
       </div>
     </div>
