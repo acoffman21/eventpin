@@ -20,7 +20,7 @@ function getOverallGrade(totalScore) {
   return { grade: 'D', label: 'Lost', color: 'text-red-score' }
 }
 
-function generateShareText(totalScore, results, streak, challenges) {
+function generateShareText(totalScore, results, streak) {
   const indicators = results.map(r => {
     if (r.totalScore >= 900) return '🟢'
     if (r.totalScore >= 700) return '🟢'
@@ -29,13 +29,18 @@ function generateShareText(totalScore, results, streak, challenges) {
     return '🔴'
   }).join('')
 
-  const body = `EventPin — ${new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+  const url = 'https://eventpin.vercel.app'
+  const date = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+  const maxScore = results.length * 1000
+
+  const text = `EventPin - ${date}
 
 ${indicators}
-Score: ${totalScore.toLocaleString()} / 5,000
-${streak > 0 ? `${streak} day streak\n` : ''}`
+Score: ${totalScore.toLocaleString()} / ${maxScore.toLocaleString()}
+${streak > 0 ? `${streak} Day Streak\n` : ''}
+${url}`
 
-  return { body, url: 'https://eventpin.vercel.app' }
+  return text
 }
 
 export default function SummaryScreen() {
@@ -49,12 +54,11 @@ export default function SummaryScreen() {
   const grade = getOverallGrade(totalScore)
 
   const handleShare = useCallback(async () => {
-    const { body, url } = generateShareText(totalScore, challengeResults, streak, challenges)
-    const fullText = `${body}${url}`
+    const shareText = generateShareText(totalScore, challengeResults, streak)
 
     if (navigator.share) {
       try {
-        await navigator.share({ text: body, url })
+        await navigator.share({ text: shareText })
         setShared(true)
         return
       } catch (e) {
@@ -63,13 +67,13 @@ export default function SummaryScreen() {
     }
 
     try {
-      await navigator.clipboard.writeText(fullText)
+      await navigator.clipboard.writeText(shareText)
       setShared(true)
       setTimeout(() => setShared(false), 2000)
     } catch (e) {
       // fallback
       const ta = document.createElement('textarea')
-      ta.value = fullText
+      ta.value = shareText
       document.body.appendChild(ta)
       ta.select()
       document.execCommand('copy')
@@ -77,7 +81,7 @@ export default function SummaryScreen() {
       setShared(true)
       setTimeout(() => setShared(false), 2000)
     }
-  }, [totalScore, challengeResults, streak, challenges])
+  }, [totalScore, challengeResults, streak])
 
   return (
     <div className="flex-1 flex flex-col overflow-y-auto bg-dark-bg px-4 py-6 topo-bg">
