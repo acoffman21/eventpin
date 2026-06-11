@@ -133,7 +133,7 @@ export default function ResultScreen() {
 
         {/* Distance badge */}
         <div className="absolute top-3 left-1/2 -translate-x-1/2 z-[1000] bg-dark-bg/90 border border-cyan-dim px-4 py-2 rounded-lg">
-          <span className="text-cyan font-bold readout">{lastResult.distance.toLocaleString()} KM</span>
+          <span className="text-cyan font-bold readout">{lastResult.distance.toLocaleString()} MI</span>
           <span className="text-parchment-dark text-xs ml-2 uppercase tracking-wider">deviation</span>
         </div>
       </div>

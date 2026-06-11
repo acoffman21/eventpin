@@ -139,7 +139,7 @@ export default function SummaryScreen() {
                           style={{ width: `${getScoreBar(result.totalScore)}%` }}
                         />
                       </div>
-                      <span className="text-[10px] text-parchment-dark readout">{result.distance.toLocaleString()} km</span>
+                      <span className="text-[10px] text-parchment-dark readout">{result.distance.toLocaleString()} mi</span>
                     </div>
                   </div>
                   <span className={`text-sm font-bold shrink-0 readout ${getScoreColor(result.totalScore)}`}>

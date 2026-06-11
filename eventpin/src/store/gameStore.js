@@ -161,7 +161,7 @@ export const useGameStore = create((set, get) => ({
 
     const result = {
       eventId: challenge.id,
-      distance: Math.round(distance),
+      distance: Math.round(distance * 0.621371),
       timeMs,
       ...scoreResult,
       pinPosition: state.pinPosition,
