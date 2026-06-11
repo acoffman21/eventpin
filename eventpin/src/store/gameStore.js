@@ -4,6 +4,7 @@ import events from '../data/events.json'
 const DAILY_LIMIT = 5
 const MAX_DISTANCE_KM = 5000
 const MAX_SCORE = 1000
+const MAX_DAILY_SCORE = DAILY_LIMIT * MAX_SCORE
 const PERFECT_THRESHOLD_KM = 50
 
 function getUTCDateString() {
@@ -169,7 +170,7 @@ export const useGameStore = create((set, get) => ({
     }
 
     const newResults = [...state.challengeResults, result]
-    const newTotalScore = state.totalScore + result.totalScore
+    const newTotalScore = Math.min(MAX_DAILY_SCORE, state.totalScore + result.totalScore)
 
     set({
       showingResult: true,
