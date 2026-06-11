@@ -157,10 +157,10 @@ export default function ResultScreen() {
                 <span className="text-parchment-dark text-xs uppercase tracking-wider">Distance Score</span>
                 <span className="text-gold readout font-bold">{lastResult.baseScore}</span>
               </div>
-              {lastResult.speedBonus > 0 && (
+              {lastResult.speedMultiplier < 1 && (
                 <div className="flex justify-between text-sm py-1.5 border-b border-dark-border/30">
-                  <span className="text-parchment-dark text-xs uppercase tracking-wider">Speed Bonus</span>
-                  <span className="text-cyan readout font-bold">+{lastResult.speedBonus}</span>
+                  <span className="text-parchment-dark text-xs uppercase tracking-wider">Speed Penalty</span>
+                  <span className="text-orange-score readout font-bold">x{lastResult.speedMultiplier.toFixed(2)}</span>
                 </div>
               )}
               {lastResult.difficultyMultiplier > 1 && (

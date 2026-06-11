@@ -50,20 +50,20 @@ function calculateScore(distanceKm, timeMs, streak, difficulty) {
     baseScore = Math.round(MAX_SCORE * (1 - (distanceKm - PERFECT_THRESHOLD_KM) / (MAX_DISTANCE_KM - PERFECT_THRESHOLD_KM)))
   }
 
-  let speedBonus = 0
-  if (timeMs < 10000) speedBonus = 100
-  else if (timeMs < 20000) speedBonus = 50
-  else if (timeMs < 30000) speedBonus = 25
+  let speedMultiplier = 0.85
+  if (timeMs < 10000) speedMultiplier = 1.0
+  else if (timeMs < 20000) speedMultiplier = 0.95
+  else if (timeMs < 30000) speedMultiplier = 0.90
 
   const difficultyMultiplier = difficulty === 'hard' ? 1.3 : difficulty === 'medium' ? 1.1 : 1.0
   const streakMultiplier = 1 + Math.min(streak, 10) * 0.05
 
   return {
     baseScore,
-    speedBonus,
+    speedMultiplier,
     difficultyMultiplier,
     streakMultiplier,
-    totalScore: Math.round((baseScore + speedBonus) * difficultyMultiplier * streakMultiplier)
+    totalScore: Math.min(MAX_SCORE, Math.round(baseScore * speedMultiplier * difficultyMultiplier * streakMultiplier))
   }
 }
 
