@@ -20,7 +20,7 @@ function getOverallGrade(totalScore) {
   return { grade: 'D', label: 'Lost', color: 'text-red-score' }
 }
 
-const SHARE_URL = 'eventpin.vercel.app'
+const SHARE_URL = 'https://eventpin.vercel.app'
 
 function generateShareText(totalScore, results, streak) {
   const indicators = results.map(r => {
