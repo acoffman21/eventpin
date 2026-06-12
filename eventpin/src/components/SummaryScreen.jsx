@@ -52,7 +52,7 @@ export default function SummaryScreen() {
 
     if (navigator.share) {
       try {
-        await navigator.share({ text: shareText, url: SHARE_URL })
+        await navigator.share({ text: shareText })
         setShared(true)
         return
       } catch (e) {
