@@ -25,10 +25,27 @@ function seedRandom(seed) {
   }
 }
 
+// Epoch: the first day of the game. All day numbering starts here.
+const EPOCH = '2025-06-10'
+
+function daysSinceEpoch(dateStr) {
+  const epoch = new Date(EPOCH + 'T00:00:00Z')
+  const target = new Date(dateStr + 'T00:00:00Z')
+  return Math.floor((target - epoch) / (1000 * 60 * 60 * 24))
+}
+
 function getDailyChallenges(dateStr) {
-  const rng = seedRandom(dateStr + '-eventpin-v1')
+  const dayNum = daysSinceEpoch(dateStr)
+  const cycleLength = Math.floor(events.length / DAILY_LIMIT)
+
+  // Create a stable shuffled order for this cycle
+  const cycleNum = Math.floor(dayNum / cycleLength)
+  const rng = seedRandom(`eventpin-cycle-${cycleNum}`)
   const shuffled = [...events].sort(() => rng() - 0.5)
-  return shuffled.slice(0, DAILY_LIMIT)
+
+  // Pick the 5 events for this day within the cycle
+  const dayInCycle = dayNum % cycleLength
+  return shuffled.slice(dayInCycle * DAILY_LIMIT, dayInCycle * DAILY_LIMIT + DAILY_LIMIT)
 }
 
 function haversineDistance(lat1, lng1, lat2, lng2) {
@@ -51,10 +68,8 @@ function calculateScore(distanceKm, timeMs, streak, difficulty) {
     baseScore = Math.round(MAX_SCORE * (1 - (distanceKm - PERFECT_THRESHOLD_KM) / (MAX_DISTANCE_KM - PERFECT_THRESHOLD_KM)))
   }
 
-  let speedMultiplier = 0.85
-  if (timeMs < 10000) speedMultiplier = 1.0
-  else if (timeMs < 20000) speedMultiplier = 0.95
-  else if (timeMs < 30000) speedMultiplier = 0.90
+  const seconds = timeMs / 1000
+  const speedMultiplier = Math.max(0.5, +(1 - seconds * 0.01).toFixed(2))
 
   const difficultyMultiplier = difficulty === 'hard' ? 1.3 : difficulty === 'medium' ? 1.1 : 1.0
   const streakMultiplier = 1 + Math.min(streak, 10) * 0.05
@@ -103,11 +118,12 @@ function getInitialState() {
   }
 
   let streak = 0
-  if (saved) {
-    const yesterday = new Date()
-    yesterday.setUTCDate(yesterday.getUTCDate() - 1)
-    const yesterdayStr = `${yesterday.getUTCFullYear()}-${String(yesterday.getUTCMonth() + 1).padStart(2, '0')}-${String(yesterday.getUTCDate()).padStart(2, '0')}`
-    if (saved.lastPlayedDate === yesterdayStr && saved.currentChallengeIndex >= DAILY_LIMIT) {
+  if (saved && saved.currentChallengeIndex >= DAILY_LIMIT) {
+    // Compare using the saved currentDate (the day they last played), not lastPlayedDate
+    const savedDay = new Date(saved.currentDate + 'T00:00:00Z')
+    const todayDay = new Date(today + 'T00:00:00Z')
+    const diffDays = Math.round((todayDay - savedDay) / (1000 * 60 * 60 * 24))
+    if (diffDays === 1) {
       streak = saved.streak
     }
   }
@@ -201,7 +217,6 @@ export const useGameStore = create((set, get) => ({
     } else {
       set({
         currentChallengeIndex: nextIndex,
-        lastPlayedDate: state.currentDate,
         screen: 'challenge',
         pinPosition: null,
         challengeStartTime: Date.now(),

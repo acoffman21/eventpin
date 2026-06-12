@@ -20,6 +20,8 @@ function getOverallGrade(totalScore) {
   return { grade: 'D', label: 'Lost', color: 'text-red-score' }
 }
 
+const SHARE_URL = 'https://eventpin.vercel.app'
+
 function generateShareText(totalScore, results, streak) {
   const indicators = results.map(r => {
     if (r.totalScore >= 900) return '🟢'
@@ -29,18 +31,10 @@ function generateShareText(totalScore, results, streak) {
     return '🔴'
   }).join('')
 
-  const url = 'https://eventpin.vercel.app'
   const date = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
   const maxScore = results.length * 1000
 
-  const text = `EventPin - ${date}
-
-${indicators}
-Score: ${totalScore.toLocaleString()} / ${maxScore.toLocaleString()}
-${streak > 0 ? `${streak} Day Streak\n` : ''}
-${url}`
-
-  return text
+  return `EventPin - ${date}\n\n${indicators}\nScore: ${totalScore.toLocaleString()} / ${maxScore.toLocaleString()}${streak > 0 ? `\n${streak} Day Streak` : ''}\n\n${SHARE_URL}`
 }
 
 export default function SummaryScreen() {
@@ -58,7 +52,7 @@ export default function SummaryScreen() {
 
     if (navigator.share) {
       try {
-        await navigator.share({ text: shareText })
+        await navigator.share({ text: shareText, url: SHARE_URL })
         setShared(true)
         return
       } catch (e) {
