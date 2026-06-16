@@ -41,7 +41,11 @@ function getDailyChallenges(dateStr) {
   // Create a stable shuffled order for this cycle
   const cycleNum = Math.floor(dayNum / cycleLength)
   const rng = seedRandom(`eventpin-cycle-${cycleNum}`)
-  const shuffled = [...events].sort(() => rng() - 0.5)
+  const shuffled = [...events]
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1))
+    ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+  }
 
   // Pick the 5 events for this day within the cycle
   const dayInCycle = dayNum % cycleLength
