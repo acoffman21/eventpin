@@ -20,8 +20,6 @@ function getOverallGrade(totalScore) {
   return { grade: 'D', label: 'Lost', color: 'text-red-score' }
 }
 
-const SHARE_URL = 'https://www.pintheevent.com'
-
 function generateShareText(totalScore, results, streak) {
   const indicators = results.map(r => {
     if (r.totalScore >= 900) return '🟢'
@@ -34,7 +32,7 @@ function generateShareText(totalScore, results, streak) {
   const date = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
   const maxScore = results.length * 1000
 
-  return `Pin the Event - ${date}\n\n${indicators}\nScore: ${totalScore.toLocaleString()} / ${maxScore.toLocaleString()}${streak > 0 ? `\n${streak} Day Streak` : ''}\n\n${SHARE_URL}`
+  return `Pin the Event - ${date}\n\n${indicators}\nScore: ${totalScore.toLocaleString()} / ${maxScore.toLocaleString()}${streak > 0 ? `\n${streak} Day Streak` : ''}\n\nPin the Event`
 }
 
 export default function SummaryScreen() {
