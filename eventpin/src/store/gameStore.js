@@ -85,7 +85,13 @@ function calculateScore(distanceKm, timeMs, streak, difficulty) {
 
 function loadState() {
   try {
-    const saved = localStorage.getItem('eventpin-state')
+    // Migrate from old key if needed
+    const old = localStorage.getItem('eventpin-state')
+    if (old && !localStorage.getItem('pintheevent-state')) {
+      localStorage.setItem('pintheevent-state', old)
+      localStorage.removeItem('eventpin-state')
+    }
+    const saved = localStorage.getItem('pintheevent-state')
     if (!saved) return null
     return JSON.parse(saved)
   } catch { return null }
@@ -102,7 +108,7 @@ function saveState(state) {
     allTimeScores: state.allTimeScores,
     gamesPlayed: state.gamesPlayed,
   }
-  localStorage.setItem('eventpin-state', JSON.stringify(toSave))
+  localStorage.setItem('pintheevent-state', JSON.stringify(toSave))
 }
 
 const today = getUTCDateString()
@@ -233,7 +239,7 @@ export const useGameStore = create((set, get) => ({
   },
 
   resetGame: () => {
-    localStorage.removeItem('eventpin-state')
+    localStorage.removeItem('pintheevent-state')
     const freshState = {
       currentDate: today,
       challenges: getDailyChallenges(today),

@@ -1,0 +1,303 @@
+@import 'tailwindcss';
+
+/* Self-hosted display + body fonts (offline-friendly for the PWA). */
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
+@import '@fontsource/poppins/800.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+
+/*
+  Bogey Bucks design system.
+  Premium golf aesthetic: deep emerald fairways, glassmorphism, and warm
+  metallic-gold betting accents. Tailwind v4 @theme registers tokens as
+  utilities (bg-fairway-800, text-gold-400, font-display, etc).
+*/
+@theme {
+  /* Fairway greens — deep, rich, slightly desaturated for a premium feel */
+  --color-fairway-950: #04140c;
+  --color-fairway-900: #082016;
+  --color-fairway-800: #0d2e20;
+  --color-fairway-700: #143d2b;
+  --color-fairway-600: #1b5138;
+  --color-fairway-500: #236b49;
+  --color-fairway-400: #2f9162;
+  --color-fairway-300: #57c089;
+  --color-fairway-200: #93e0b6;
+
+  /* Metallic gold / cash accents */
+  --color-gold-600: #d99a1c;
+  --color-gold-500: #f5b426;
+  --color-gold-400: #fbcb4d;
+  --color-gold-300: #fde08a;
+  --color-gold-200: #fdeebb;
+
+  /* Money tracker */
+  --color-cash-up: #34e0a1;
+  --color-cash-down: #ff6f8d;
+
+  --font-display: 'Poppins', 'Inter', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Soft shadows for depth */
+  --shadow-glow-gold: 0 8px 30px -6px rgba(245, 180, 38, 0.45);
+  --shadow-glow-green: 0 8px 30px -6px rgba(47, 145, 98, 0.5);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #e9f7ef;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overscroll-behavior-y: none;
+
+  /*
+    Layered "course at dusk" backdrop:
+     1. warm glow up top (sun)
+     2. green spotlight
+     3. faint fairway mow stripes
+     4. subtle dot grid texture
+     5. deep base color
+  */
+  background-color: var(--color-fairway-950);
+  background-image:
+    radial-gradient(
+      900px 500px at 50% -8%,
+      rgba(245, 180, 38, 0.1) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      1100px 600px at 50% 0%,
+      rgba(31, 81, 56, 0.55) 0%,
+      transparent 60%
+    ),
+    repeating-linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0.014) 0px,
+      rgba(255, 255, 255, 0.014) 2px,
+      transparent 2px,
+      transparent 26px
+    ),
+    radial-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: auto, auto, auto, 22px 22px;
+  background-attachment: fixed;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Gold metallic text treatment */
+.text-metal-gold {
+  background: linear-gradient(180deg, #fde08a 0%, #f5b426 55%, #d99a1c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Glass surface utility */
+.glass {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.06) 0%,
+      rgba(255, 255, 255, 0.02) 100%
+    ),
+    rgba(13, 46, 32, 0.6);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+
+/* Hairline gradient border using a mask trick */
+.ring-grad {
+  position: relative;
+}
+.ring-grad::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.22),
+    rgba(255, 255, 255, 0.02) 40%,
+    rgba(245, 180, 38, 0.18)
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Hide number input spinners for a cleaner score pad */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* Custom slim scrollbar (hole strip, tables) */
+*::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(87, 192, 137, 0.3);
+  border-radius: 999px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* Animations                                                              */
+/* ----------------------------------------------------------------------- */
+@keyframes pop-in {
+  0% {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.015);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.animate-pop {
+  animation: pop-in 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-slide-up {
+  animation: slide-up 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes toast-in {
+  0% {
+    transform: translateY(-130%) scale(0.96);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-130%) scale(0.96);
+    opacity: 0;
+  }
+}
+.animate-toast {
+  animation: toast-in 3.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Gold sheen sweep across buttons */
+@keyframes sheen {
+  0% {
+    transform: translateX(-120%) skewX(-18deg);
+  }
+  100% {
+    transform: translateX(220%) skewX(-18deg);
+  }
+}
+.sheen {
+  position: relative;
+  overflow: hidden;
+}
+.sheen::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: translateX(-120%) skewX(-18deg);
+}
+.sheen:hover::after,
+.sheen:active::after {
+  animation: sheen 0.8s ease;
+}
+
+/* Pulsing glow for "live" indicators */
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+}
+.animate-glow {
+  animation: glow-pulse 1.8s ease-in-out infinite;
+}
+
+/* Floating bob for emoji/ball accents */
+@keyframes float-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.animate-float {
+  animation: float-bob 3.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* Safe-area helpers for on-course phone use */
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}

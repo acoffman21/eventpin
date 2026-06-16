@@ -30,7 +30,7 @@ export default function HomeScreen() {
             <line x1="18" y1="12" x2="22" y2="12"/>
             <circle cx="12" cy="12" r="3" fill="#22d3ee" opacity="0.3"/>
           </svg>
-          <h1 className="text-3xl font-bold text-cyan tracking-[0.2em] uppercase">EventPin</h1>
+          <h1 className="text-3xl font-bold text-cyan tracking-[0.2em] uppercase">Pin the Event</h1>
         </div>
         <div className="flex items-center justify-center gap-2 text-parchment-dark text-xs tracking-[0.15em] uppercase">
           <span className="w-8 h-px bg-cyan-dim opacity-50"></span>
@@ -155,7 +155,7 @@ export default function HomeScreen() {
         </div>
       </div>
 
-      <p className="text-center text-parchment-dark/30 text-[10px] mt-4 mb-2 uppercase tracking-[0.2em]">EventPin v1.0 // Know Where History Happened</p>
+      <p className="text-center text-parchment-dark/30 text-[10px] mt-4 mb-2 uppercase tracking-[0.2em]">Pin the Event v1.0 // Know Where History Happened</p>
     </div>
   )
 }

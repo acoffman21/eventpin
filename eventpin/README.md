@@ -1,4 +1,4 @@
-# EventPin — Pin the Past
+# Pin the Event — Pin the Past
 
 > Where did history happen? A daily history pinning game inspired by GeoGuessr, built as a mobile-first PWA.
 
@@ -113,19 +113,19 @@ npm run build
 Use these prompts with AI to extend the app:
 
 ### Add more events via AI
-> "Generate 50 more historical events for my EventPin game in the same JSON format. Include events from: Sub-Saharan Africa, Southeast Asia, Oceania, and pre-Columbian Americas. Each needs: id, title, year, clue (neutral, doesn't name the location), lat, lng, description, facts (array of 2), image (Wikimedia Commons URL), difficulty (easy/medium/hard), era, region. Ensure geographic and temporal diversity."
+> "Generate 50 more historical events for my Pin the Event game in the same JSON format. Include events from: Sub-Saharan Africa, Southeast Asia, Oceania, and pre-Columbian Americas. Each needs: id, title, year, clue (neutral, doesn't name the location), lat, lng, description, facts (array of 2), image (Wikimedia Commons URL), difficulty (easy/medium/hard), era, region. Ensure geographic and temporal diversity."
 
 ### Add Firebase backend
-> "Add Firebase to my EventPin React app for: (1) Anonymous auth on first visit, (2) Firestore to store daily scores and streaks, (3) Real-time global leaderboard showing top 100 daily scores, (4) Friend codes so users can compare with friends. Keep the offline-first localStorage approach as fallback. Use Firebase v9 modular SDK."
+> "Add Firebase to my Pin the Event React app for: (1) Anonymous auth on first visit, (2) Firestore to store daily scores and streaks, (3) Real-time global leaderboard showing top 100 daily scores, (4) Friend codes so users can compare with friends. Keep the offline-first localStorage approach as fallback. Use Firebase v9 modular SDK."
 
 ### Add user-submitted events
-> "Add a 'Submit Event' form to EventPin where users can propose new historical events. Store submissions in Firestore with a 'pending' status. Add an admin dashboard to review/approve submissions. Approved events get added to a 'community' pool that supplements the curated events."
+> "Add a 'Submit Event' form to Pin the Event where users can propose new historical events. Store submissions in Firestore with a 'pending' status. Add an admin dashboard to review/approve submissions. Approved events get added to a 'community' pool that supplements the curated events."
 
 ### Add difficulty modes
-> "Add three difficulty modes to EventPin: (1) Explorer mode shows the event name and a zoomed-in map, (2) Standard mode is the current behavior with image + clue, (3) Expert mode has text clue only, no image, wider scoring range. Let users pick their mode from the home screen. Track separate streaks and leaderboards per mode."
+> "Add three difficulty modes to Pin the Event: (1) Explorer mode shows the event name and a zoomed-in map, (2) Standard mode is the current behavior with image + clue, (3) Expert mode has text clue only, no image, wider scoring range. Let users pick their mode from the home screen. Track separate streaks and leaderboards per mode."
 
 ### Add multiplayer
-> "Add a real-time multiplayer mode to EventPin using WebSockets (Socket.io). Players join a room with a code, see the same 5 events simultaneously, and race to pin them. Show live opponent pins after both submit. Score includes both accuracy and speed relative to opponent."
+> "Add a real-time multiplayer mode to Pin the Event using WebSockets (Socket.io). Players join a room with a code, see the same 5 events simultaneously, and race to pin them. Show live opponent pins after both submit. Score includes both accuracy and speed relative to opponent."
 
 ### Add sound effects and haptics
-> "Add satisfying sound effects and haptic feedback to EventPin: pin drop sound, score counting up, perfect score fanfare, streak fire crackle. Use Web Audio API for sounds and navigator.vibrate for haptics. Include a mute toggle in settings. Keep file sizes small (use synthesized audio where possible)."
+> "Add satisfying sound effects and haptic feedback to Pin the Event: pin drop sound, score counting up, perfect score fanfare, streak fire crackle. Use Web Audio API for sounds and navigator.vibrate for haptics. Include a mute toggle in settings. Keep file sizes small (use synthesized audio where possible)."
