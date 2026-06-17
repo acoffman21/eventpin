@@ -20,6 +20,13 @@ function getOverallGrade(totalScore) {
   return { grade: 'D', label: 'Lost', color: 'text-red-score' }
 }
 
+function formatTime(ms) {
+  const totalSeconds = Math.round(ms / 1000)
+  const minutes = Math.floor(totalSeconds / 60)
+  const seconds = totalSeconds % 60
+  return `${minutes}:${String(seconds).padStart(2, '0')}`
+}
+
 function generateShareText(totalScore, results, streak) {
   const indicators = results.map(r => {
     if (r.totalScore >= 900) return '🟢'
@@ -31,8 +38,14 @@ function generateShareText(totalScore, results, streak) {
 
   const date = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
   const maxScore = results.length * 1000
+  const totalTimeMs = results.reduce((sum, r) => sum + r.timeMs, 0)
+  const avgDistance = Math.round(results.reduce((sum, r) => sum + r.distance, 0) / results.length)
 
-  return `Pin the Event - ${date}\n\n${indicators}\nScore: ${totalScore.toLocaleString()} / ${maxScore.toLocaleString()}${streak > 0 ? `\n${streak} Day Streak` : ''}\n\nPin the Event`
+  let text = `Pin the Event - ${date}\n\n${indicators}\nScore: ${totalScore.toLocaleString()} / ${maxScore.toLocaleString()}\nTime: ${formatTime(totalTimeMs)}\nAvg. Distance: ${avgDistance.toLocaleString()} mi\n\npintheevent.com`
+  if (streak > 0) {
+    text += `\n${streak} Day Streak`
+  }
+  return text
 }
 
 export default function SummaryScreen() {
@@ -97,9 +110,17 @@ export default function SummaryScreen() {
         </div>
       </div>
 
+      {/* Total Time */}
+      <div className="text-center mb-4 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+        <span className="inline-flex items-center gap-2 bg-dark-surface border border-dark-border rounded-lg px-4 py-2">
+          <span className="text-cyan readout font-bold">{formatTime(challengeResults.reduce((sum, r) => sum + r.timeMs, 0))}</span>
+          <span className="text-parchment-dark text-xs uppercase tracking-wider">total time</span>
+        </span>
+      </div>
+
       {/* Streak */}
       {streak > 0 && (
-        <div className="text-center mb-4 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+        <div className="text-center mb-4 animate-slide-up" style={{ animationDelay: '0.15s' }}>
           <span className="inline-flex items-center gap-2 bg-dark-surface border border-dark-border rounded-lg px-4 py-2">
             <span className="text-cyan readout font-bold">{streak}</span>
             <span className="text-parchment-dark text-xs uppercase tracking-wider">day streak</span>
@@ -108,7 +129,7 @@ export default function SummaryScreen() {
       )}
 
       {/* Round Results */}
-      <div className="bg-dark-surface border border-dark-border rounded-lg p-4 mb-4 animate-slide-up tactical-card" style={{ animationDelay: '0.2s' }}>
+      <div className="bg-dark-surface border border-dark-border rounded-lg p-4 mb-4 animate-slide-up tactical-card" style={{ animationDelay: '0.25s' }}>
         <div className="tactical-card-inner">
           <h3 className="text-cyan font-semibold mb-3 text-sm uppercase tracking-wider">Round Breakdown</h3>
           <div className="space-y-3">
@@ -145,7 +166,7 @@ export default function SummaryScreen() {
       </div>
 
       {/* Share Buttons */}
-      <div className="space-y-3 mb-4 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+      <div className="space-y-3 mb-4 animate-slide-up" style={{ animationDelay: '0.35s' }}>
         <button
           onClick={handleShare}
           className="w-full py-4 rounded-lg bg-cyan/10 border border-cyan text-cyan font-bold text-sm btn-tactical flex items-center justify-center gap-2"

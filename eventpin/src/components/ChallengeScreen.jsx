@@ -1,7 +1,9 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect, useRef } from 'react'
 import { MapContainer, TileLayer, Marker, useMapEvents } from 'react-leaflet'
 import L from 'leaflet'
 import { useGameStore } from '../store/gameStore'
+
+const TIMER_DURATION = 30000 // 30 seconds
 
 const userPinIcon = L.divIcon({
   className: 'pin-marker',
@@ -31,12 +33,39 @@ export default function ChallengeScreen() {
   const getCurrentChallenge = useGameStore((s) => s.getCurrentChallenge)
   const setPin = useGameStore((s) => s.setPin)
   const submitGuess = useGameStore((s) => s.submitGuess)
+  const submitTimeout = useGameStore((s) => s.submitTimeout)
   const pinPosition = useGameStore((s) => s.pinPosition)
   const currentChallengeIndex = useGameStore((s) => s.currentChallengeIndex)
   const goHome = useGameStore((s) => s.goHome)
 
   const [clueExpanded, setClueExpanded] = useState(true)
+  const [timeRemaining, setTimeRemaining] = useState(TIMER_DURATION)
+  const timerExpired = useRef(false)
   const challenge = getCurrentChallenge()
+
+  // Countdown timer
+  useEffect(() => {
+    timerExpired.current = false
+    setTimeRemaining(TIMER_DURATION)
+    const startTime = Date.now()
+
+    const interval = setInterval(() => {
+      const elapsed = Date.now() - startTime
+      const remaining = Math.max(0, TIMER_DURATION - elapsed)
+      setTimeRemaining(remaining)
+
+      if (remaining <= 0 && !timerExpired.current) {
+        timerExpired.current = true
+        clearInterval(interval)
+        submitTimeout()
+      }
+    }, 100)
+
+    return () => clearInterval(interval)
+  }, [currentChallengeIndex, submitTimeout])
+
+  const timerPercent = (timeRemaining / TIMER_DURATION) * 100
+  const timerColor = timerPercent > 50 ? 'bg-cyan' : timerPercent > 25 ? 'bg-orange-score' : 'bg-red-score'
 
   const handleMapClick = useCallback((lat, lng) => {
     setPin(lat, lng)
@@ -69,6 +98,14 @@ export default function ChallengeScreen() {
           </span>
         </div>
         <div className="w-10" />
+      </div>
+
+      {/* Timer bar */}
+      <div className="h-1 bg-dark-card w-full z-20">
+        <div
+          className={`h-full ${timerColor} transition-colors duration-300`}
+          style={{ width: `${timerPercent}%`, transition: 'width 100ms linear, background-color 300ms ease' }}
+        />
       </div>
 
       {/* Clue panel - collapsible */}

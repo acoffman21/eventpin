@@ -209,6 +209,43 @@ export const useGameStore = create((set, get) => ({
     saveState({ ...get() })
   },
 
+  submitTimeout: () => {
+    const state = get()
+    const challenge = state.challenges[state.currentChallengeIndex]
+
+    if (state.pinPosition) {
+      // Pin was placed — submit as normal guess
+      get().submitGuess()
+      return
+    }
+
+    // No pin placed — record 0 points
+    const result = {
+      eventId: challenge.id,
+      distance: Math.round(MAX_DISTANCE_KM * 0.621371),
+      timeMs: 30000,
+      baseScore: 0,
+      speedMultiplier: 0.5,
+      difficultyMultiplier: challenge.difficulty === 'hard' ? 1.3 : challenge.difficulty === 'medium' ? 1.1 : 1.0,
+      streakMultiplier: 1 + Math.min(state.streak, 10) * 0.05,
+      totalScore: 0,
+      pinPosition: { lat: 0, lng: 0 },
+      actualPosition: { lat: challenge.lat, lng: challenge.lng },
+    }
+
+    const newResults = [...state.challengeResults, result]
+
+    set({
+      showingResult: true,
+      lastResult: result,
+      challengeResults: newResults,
+      totalScore: state.totalScore,
+      screen: 'result',
+    })
+
+    saveState({ ...get() })
+  },
+
   nextChallenge: () => {
     const state = get()
     const nextIndex = state.currentChallengeIndex + 1
